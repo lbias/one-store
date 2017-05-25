@@ -38,8 +38,11 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootstrap-sass'
 # Flexible authentication solution for Rails with Warden
 gem 'devise'
-# To not touch your way of defining the layout, letting you find the better design for your eyes 
+# To not touch your way of defining the layout, letting you find the better design for your eyes
 gem 'simple_form'
+# font-awesome-rails provides the Font-Awesome web fonts and stylesheets as a Rails engine for use with the asset pipeline.
+gem 'font-awesome-rails'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
