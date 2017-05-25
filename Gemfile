@@ -42,7 +42,10 @@ gem 'devise'
 gem 'simple_form'
 # font-awesome-rails provides the Font-Awesome web fonts and stylesheets as a Rails engine for use with the asset pipeline.
 gem 'font-awesome-rails'
-
+# Provide a simple and extremely flexible way to upload files from Ruby applications.
+gem 'carrierwave'
+# Manipulate images with minimal use of memory via ImageMagick / GraphicsMagick. 
+gem 'mini_magick'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
