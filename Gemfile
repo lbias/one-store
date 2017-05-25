@@ -38,6 +38,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootstrap-sass'
 # Flexible authentication solution for Rails with Warden
 gem 'devise'
+# To not touch your way of defining the layout, letting you find the better design for your eyes 
+gem 'simple_form'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
