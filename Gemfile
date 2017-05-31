@@ -44,8 +44,9 @@ gem 'simple_form'
 gem 'font-awesome-rails'
 # Provide a simple and extremely flexible way to upload files from Ruby applications.
 gem 'carrierwave'
-# Manipulate images with minimal use of memory via ImageMagick / GraphicsMagick. 
+# Manipulate images with minimal use of memory via ImageMagick / GraphicsMagick.
 gem 'mini_magick'
+gem 'letter_opener', group: :development
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
