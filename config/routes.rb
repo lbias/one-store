@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   namespace :admin do
     resources :products
+    resources :orders
   end
 
   resources :products do
@@ -27,7 +28,7 @@ Rails.application.routes.draw do
       post :pay_with_wechat
     end
   end
-  
+
   namespace :account do
     resources :orders
   end
