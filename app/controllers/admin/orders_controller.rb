@@ -16,6 +16,7 @@ class Admin::OrdersController < ApplicationController
   def ship
     @order = Order.find(params[:id])
     @order.ship!
+    OrderMailer.notify_ship(@order).deliver!
     redirect_to :back
   end
 
@@ -35,5 +36,5 @@ class Admin::OrdersController < ApplicationController
     @order = Order.find(params[:id])
     @order.return_good!
     redirect_to :back
-  end  
+  end
 end
