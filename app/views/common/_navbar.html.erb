@@ -1,14 +1,16 @@
 <nav class="navbar navbar-default" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
+
     <div class="navbar-header">
       <a class="navbar-brand" href="/">Robot Store </a>
+
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active">
+        <li class="product">
           <%= link_to("Products", products_path) %>
         </li>
       </ul>
@@ -19,6 +21,7 @@
               购物车 <i class="fa fa-shopping-cart"> </i> ( <%= current_cart.products.count %> )
            <% end %>
         </li>
+
         <% if !current_user %>
           <li><%= link_to("注册", new_user_registration_path) %> </li>
           <li><%= link_to(content_tag(:i, '登录', class: 'fa fa-sign-in'), new_user_session_path) %></li>
@@ -43,3 +46,7 @@
   </div>
   <!-- /.container-fluid -->
 </nav>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
