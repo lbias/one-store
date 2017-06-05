@@ -94,11 +94,8 @@ body {
 
 //---------Navbar---------
 
-
-
-.container-fluid{
-  background-color:  #B2EBF2;  //背景颜色
-  font-size: 15px;
+.container-fluid .navbar-bar{
+  background-color:  #B2EBF2;
 }
 
 .navbar-brand{
@@ -107,10 +104,6 @@ body {
 
 .product{
   font-size: 20px;
-}
-
-.nav .navbar-nav{
-  background-color: #fff;  //背景颜色
 }
 
 .navbar-default {
@@ -238,13 +231,18 @@ body {
 
   //---------Footer---------
 
+
+.footer{
+  background-color:  #B2EBF2
+}
+
   .footer {
     position: absolute;
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
     height: 0px;
-    background-color: #233140;
+    background-color:  #B2EBF2
 
     p {
       color: black;
