@@ -93,10 +93,10 @@ body {
 }
 
 //---------Navbar---------
-.navbar-default {
- background: rgba(0,0,0,0); //半透明背景
+.navbar-fixed-top {
+ background: rgba(0,0,0,0.5); //半透明背景
 
- font-size: 16px;
+ font-size: 18px;
 
  /* 文字连结 */
  a {
@@ -131,6 +131,7 @@ body {
  .logo-box {
    margin-right: 15px;
    font-size: 12px;
+   margin-top: -8px;
  }
 
  /*===== Dropdown ======*/
@@ -163,21 +164,6 @@ body {
    z-index: 10;
  }
 
- /* 搜索栏 */
- .search-box {
-   margin-top: 7.5px;
-
-   /* 输入框 */
-   input {
-     height: 35px;
-   }
-
-   /* 按钮 */
-   button {
-     padding: 5px 10px 5px 10px;
-     height: 35px;
-   }
- }
 }
   //---------carousel-inner---------
 

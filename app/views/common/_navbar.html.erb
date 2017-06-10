@@ -1,16 +1,16 @@
 <div class="row">
   <div class="col-md-12">
     <% if current_page?('/') %>
-      <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
+      <div class="navbar navbar-fixed-top" role="navigation" id="navbar">
     <% else %>
-      <div class="navbar navbar-default navbar-fixed-top scroll_navbar" role="navigation">
+      <div class="navbar navbar-fixed-top scroll_navbar" role="navigation">
     <% end %>
       <div class="container">
         <div class="navbar-header">
 
           <!--===== 网站 Logo/名称 =====-->
           <%= link_to root_path, class: "navbar-brand logo-box scroll" do %>
-            <i class="fa fa-cog fa-spin fa-3x fa-fw"></i> Robot
+            <i class="fa fa-cog fa-spin fa-3x fa-fw"></i> <span> Robot <span>
           <% end %>
         </div>
         <div class="collapse navbar-collapse top-nav" id="menu-4">
@@ -21,9 +21,6 @@
               <%= link_to("Products", products_path) %>
             </li>
           </ul>
-
-
-
 
           <!--=== 帐号操作 ===-->
           <ul class='nav navbar-nav  navbar-right'>
@@ -65,6 +62,7 @@
           </ul>
 
 
+          </div>
         </div>
       </div>
     </div>
