@@ -1,1 +1,221 @@
-<h1> Welcome to Robot Store! </h1>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<style>
+
+</style>
+</head>
+<body>
+
+<div id="myCarousel" class="carousel slide">
+	<!-- 轮播（Carousel）指标 -->
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+		<li data-target="#myCarousel" data-slide-to="4"></li>
+    <li data-target="#myCarousel" data-slide-to="5"></li>
+		<li data-target="#myCarousel" data-slide-to="6"></li>
+	</ol>
+
+  <!-- 轮播（Carousel）项目 -->
+	<div class="carousel-inner">
+
+		<div class="item active">
+		    <img src="https://ws2.sinaimg.cn/large/006tNc79gy1fg811phh9oj31400i942m.jpg" alt="First slide" class="center-block">
+        <div class="carousel-caption">
+          <h3 class="title">I AM NOT A ROBOT</h3>
+          <p class="descri">
+          <p class="lead"><%= link_to("发现机器人", products_path, class: "btn btn-lg btn-danger") %></p>
+        </div>
+		</div>
+		<div class="item">
+		    <img src="https://ws4.sinaimg.cn/large/006tNc79ly1fg814lpp9kj31410i9kjl.jpg" alt="Second slide" class="center-block">
+		</div>
+		<div class="item">
+		    <img src="https://ws2.sinaimg.cn/large/006tNc79gy1fg8180krdgj31400i94qp.jpg" alt="Third slide" class="center-block">
+		</div>
+    <div class="item">
+		    <img src="https://ws1.sinaimg.cn/large/006tNc79gy1fg818rjwbwj31400i9awh.jpg" alt="Third slide" class="center-block">
+		</div>
+    <div class="item">
+		    <img src="https://ws3.sinaimg.cn/large/006tNc79ly1fg817imxarj31400i91h2.jpg" alt="Third slide" class="center-block">
+		</div>
+    <div class="item">
+		    <img src="https://ws2.sinaimg.cn/large/006tNc79gy1ffyx68uj4sj31jk0pe1kx.jpg" alt="Third slide" class="center-block">
+		</div>
+
+
+	</div>
+	<!-- 轮播（Carousel）导航 -->
+	<!-- <a class="carousel-control left" href="#myCarousel" data-slide="prev">‹</a>
+	<a class="carousel-control right" href="#myCarousel" data-slide="next">›</a> -->
+</div>
+
+<!-- 控制按钮 -->
+<div style="text-align:center; margin-top:10px;">
+  <span class="slide-one">
+    <img src="https://ws4.sinaimg.cn/large/006tNc79gy1fg824mp4t9j303f01lq33.jpg">&nbsp;
+   </span>
+   <span class="slide-two">
+     <img src="https://ws2.sinaimg.cn/large/006tNc79gy1fg8230blkhj303f01lq2t.jpg">&nbsp;
+   </span>
+   <span class="slide-three">
+     <img src="https://ws2.sinaimg.cn/large/006tNc79gy1fg824wrbxwj303f01l0sx.jpg">&nbsp;
+   </span>
+   <span class="slide-four">
+     <img src="https://ws3.sinaimg.cn/large/006tNc79gy1fg8250pimdj303f01lt8v.jpg">&nbsp;
+    </span>
+    <span class="slide-five">
+      <img src="https://ws2.sinaimg.cn/large/006tNc79gy1fg8253m586j303f01ljrl.jpg">&nbsp;
+    </span>
+    <span class="slide-six">
+      <img src="https://ws2.sinaimg.cn/large/006tNc79gy1fg82r80zhhj303e01lmx0.jpg">&nbsp;
+    </span>
+ </div>
+
+ <script>
+ 	$(function(){
+ 		// 初始化轮播
+ 		$(".start-slide").click(function(){
+ 			$("#myCarousel").carousel('cycle');
+ 		});
+ 		// 停止轮播
+ 		$(".pause-slide").click(function(){
+ 			$("#myCarousel").carousel('pause');
+ 		});
+    // 循环轮播到上一个项目
+		$(".prev-slide").click(function(){
+			$("#myCarousel").carousel('prev');
+		});
+		// 循环轮播到下一个项目
+		$(".next-slide").click(function(){
+			$("#myCarousel").carousel('next');
+		});
+		// 循环轮播到某个特定的帧
+		$(".slide-one").click(function(){
+			$("#myCarousel").carousel(0);
+		});
+		$(".slide-two").click(function(){
+			$("#myCarousel").carousel(1);
+		});
+		$(".slide-three").click(function(){
+			$("#myCarousel").carousel(2);
+		});
+    $(".slide-four").click(function(){
+			$("#myCarousel").carousel(3);
+		});
+    $(".slide-five").click(function(){
+			$("#myCarousel").carousel(4);
+		});
+    $(".slide-six").click(function(){
+			$("#myCarousel").carousel(5);
+		});
+	});
+</script>
+</body>
+</html>
+
+<br
+
+<!--激活机器人--> <!-- 激活机器人 -->
+<section class="product-items-box">
+		<div class="container box-products">
+           <div class="row">
+               <div class="col-lg-12 text-center">
+                   <h2>激活机器人</h2>
+                   <hr class="star-primary">
+               </div>
+           </div>
+           <div class="row">
+
+               <div class="col-sm-4 portfolio-item">
+                   <a href="/products" class="portfolio-link" data-toggle="modal">
+
+                       <img src="https://ws4.sinaimg.cn/large/006tKfTcgy1fg5rum0c7uj31kw161u0y.jpg" class="img-responsive" >
+
+                       <h2>Jibo</h2>
+                   </a>
+               </div>
+
+               <div class="col-sm-4 portfolio-item">
+                   <a href="/products" class="portfolio-link" data-toggle="modal">
+
+                       <img src="https://ws4.sinaimg.cn/large/006tKfTcgy1fg5rvjo854j30vs0vs0wj.jpg" class="img-responsive" >
+                       <h2>B8</h2>
+                   </a>
+               </div>
+
+               <div class="col-sm-4 portfolio-item">
+                   <a href="/products" class="portfolio-link" data-toggle="modal">
+
+                       <img src="https://ws2.sinaimg.cn/large/006tKfTcgy1fg5rweisf7j30qo0hsaak.jpg" class="img-responsive" >
+                       <h2>Kuri</h2>
+                   </a>
+               </div>
+
+
+           </div>
+       </div>
+   </section>
+
+<section class="g-home-app">
+        <div class="container">
+            <h2>品质保证</h2>
+            <a target="_blank" class="view-all" href=""></a>
+            <div class="row">
+            <div class="col-md-3 col-sm-6">
+                    <a target="_blank" href="">
+                        <img src="http://cdnshop.makeblock.com/image/home/appsmBlock.png">
+                        <p>品牌</p>
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <a target="_blank" href="">
+                        <img src="http://cdnshop.makeblock.com/image/home/mBlockapp.jpg">
+                        <p>后勤</p>
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <a target="_blank" href="">
+                        <img src="http://cdnshop.makeblock.com/image/home/appsmakeblockapp.png">
+                        <p>反馈</p>
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <a target="_blank" href="">
+                        <img src="http://cdnshop.makeblock.com/image/home/tutorials.png">
+                        <p>信息</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+		<!-- 公告栏 -->
+  <div class="row landing-page-advup">
+    <div class="landing-page-adv">
+      <div class="container">
+        <div class="row">
+          <h4>最新，最潮机器人</h4>
+          <h5>就在“I AM NOT A ROBOT”</h5>
+          <p class="lead"><%= link_to("发现机器人", products_path, class: "btn btn-lg btn-danger") %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+ <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
