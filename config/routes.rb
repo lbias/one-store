@@ -3,7 +3,12 @@ Rails.application.routes.draw do
   root 'products#index'
 
   namespace :admin do
-    resources :products
+    resources :products do
+      member do
+        post :publish
+        post :hide        
+      end
+    end
     resources :orders do
       member do
         post :cancel
@@ -29,7 +34,7 @@ Rails.application.routes.draw do
         post :publish
         post :hide
       end
-    end            
+    end
   end
 
   resources :products do
