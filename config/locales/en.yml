@@ -62,3 +62,16 @@ en:
   user-center: My Profile
   user-order: My Orders
   language: Change Language
+
+  # 共用元素
+  f-options: Operation Options
+
+  # 品牌管理
+  brand-index: Brand Index
+  brand-new: New Brand
+  brand-edit: Edit Brand
+  f-brand-name: Brand Name
+  f-brand-logo: Brand Logo
+  f-brand-description: Brand Description
+  f-brand-products: Brand Products
+  btn-brand-new: New Brand
