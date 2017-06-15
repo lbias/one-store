@@ -79,9 +79,10 @@ en:
   f-brand-products: Brand Products
   btn-brand-new: New Brand
 
-  # 大型管理 #
+  # 大类管理 #
   category-group-index: Category Group Index
   category-group-new: New Category Group
+  category-group-edit: Edit Category Group
   f-category-group: Category Group
   f-category-groups: Category Groups
   f-category-group-name: Category Group Name
