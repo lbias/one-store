@@ -51,3 +51,14 @@ zh-CN:
   save: 保存
   male: 男
   female: 女
+
+  # Navbar
+  signup: 注册
+  login: 登录
+  logout: 退出
+  greeting: 您好！
+  product-access: 全部商品
+  admin-access: 管理员后台
+  user-center: 个人信息
+  user-order: 我的订单
+  language: 切换语言
