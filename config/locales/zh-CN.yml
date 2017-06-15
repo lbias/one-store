@@ -66,7 +66,8 @@ zh-CN:
   # 共用元素
   f-options: 操作选项
   f-hide: 隐藏
-  f-submit: 确认提交  
+  f-submit: 确认提交
+  notice-no-image: 尚无图片
 
   # 品牌管理
   brand-index: 品牌一览
