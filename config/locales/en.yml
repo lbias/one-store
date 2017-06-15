@@ -83,7 +83,7 @@ en:
   category-group-index: Category Group Index
   category-group-new: New Category Group
   f-category-group: Category Group
-  f-category-groups: Category Groups    
+  f-category-groups: Category Groups
 
   # 细分品类管理 #
   category-index: Category Index
@@ -91,3 +91,4 @@ en:
   btn-category-new: New Category
   category-new: New Category
   category-edit: Edit Category
+  f-category-products: Category Products

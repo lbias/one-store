@@ -1,0 +1,12 @@
+<!-- 细分品类详情 -->
+<h1> <%= @category.name %> </h1>
+
+<!-- 所属大类 -->
+<h3><%= t('f-category-group') %></h3>
+<%= @category.category_group.name %>
+
+<!-- 该细分品类下商品一览 -->
+<h3><%= t('f-category-products') %></h3>
+<% @category.products.each do |product| %>
+  <li><%= link_to(product.name, admin_product_path(product)) %></li>
+<% end %>
