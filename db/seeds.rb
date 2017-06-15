@@ -9,7 +9,9 @@
 # 新增 admin 账号  User #
 if User.find_by(email: 'admin@test.com').nil?
   u = User.new
+  u.name = '测试管理员'
   u.email = 'admin@test.com'
+  u.nickname = '测试管理员'
   u.password = '11111111'
   u.password_confirmation = '11111111'
   u.is_admin = true
@@ -22,7 +24,9 @@ end
 # 新增 user 账号  User #
 if User.find_by(email: 'user@test.com').nil?
   u = User.new
+  u.name = '测试用户'
   u.email = 'user@test.com'
+  u.nickname = '测试用户'
   u.password = '11111111'
   u.password_confirmation = '11111111'
   u.is_admin = false
