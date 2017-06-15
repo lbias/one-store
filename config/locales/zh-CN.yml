@@ -63,8 +63,10 @@ zh-CN:
   user-order: 我的订单
   language: 切换语言
 
-  # 共用元素 
+  # 共用元素
   f-options: 操作选项
+  f-hide: 隐藏
+  f-submit: 确认提交  
 
   # 品牌管理
   brand-index: 品牌一览

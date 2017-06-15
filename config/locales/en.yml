@@ -65,6 +65,8 @@ en:
 
   # 共用元素
   f-options: Operation Options
+  f-hide: Hide
+  f-submit: Submit   
 
   # 品牌管理
   brand-index: Brand Index
