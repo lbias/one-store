@@ -6,4 +6,18 @@ class Category < ApplicationRecord
   # 关联
   belongs_to :category_group
   has_many :products
+
+  # 发布与隐藏
+  def publish!
+    self.is_hidden = false
+    self.save
+  end
+
+  def hide!
+    self.is_hidden = true
+    self.save
+  end
+
+  # Scope
+  scope :published, -> { where(is_hidden: false) }  
 end
