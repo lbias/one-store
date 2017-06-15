@@ -12,6 +12,24 @@ Rails.application.routes.draw do
         post :return
       end
     end
+    resources :brands do
+      member do
+        post :publish
+        post :hide
+      end
+    end
+    resources :categories do
+      member do
+        post :publish
+        post :hide
+      end
+    end
+    resources :category_groups do
+      member do
+        post :publish
+        post :hide
+      end
+    end            
   end
 
   resources :products do
