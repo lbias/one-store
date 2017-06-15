@@ -25,5 +25,4 @@ module Admin::BrandsHelper
       t('notice-no-image')
     end
   end
-
 end
