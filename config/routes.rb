@@ -37,7 +37,11 @@ Rails.application.routes.draw do
     end
   end
 
+  # 用户专区
   namespace :account do
+    # 订单中心
     resources :orders
+    # 用户信息
+    resources :users
   end
 end

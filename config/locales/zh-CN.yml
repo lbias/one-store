@@ -1,0 +1,51 @@
+zh-CN:
+
+# Devise 相关
+  devise:
+    failure:
+      unauthenticated: 您必须是 J&Z SELECT 用户才能进行操作。
+      not_found_in_database: 此账号不存在。
+      invalid: 账号或密码输入错误。
+    sessions:
+      signed_in: 登入成功，欢迎回来！
+      signed_out: 登出成功。
+
+  dv-warn-email: 请输入您的电子信箱。
+  dv-warn-name: 请输入用户名称。
+  dv-warn-pwd: 密码不相符，请再次确认。
+  dv-warn-pwd-characters: 请输入 6 到 16 个字符的密码。
+
+  dv-login: 登录
+  dv-signup: 注册
+  dv-email: 电子信箱
+  dv-pwd: 密码
+  dv-remember-me: 记住我
+  dv-forgot-pwd: 忘记密码？
+  dv-check-email: you@example.com
+  dv-name: 用户名称
+  dv-find-pwd: 取得密码
+  dv-account-signin: 已经是 J&Z SELECT 用户了吗？按此登入。
+  dv-no-account-signup: 现在就加入 J&Z SELECT。
+  dv-user: 用户
+  dv-admin: 管理员
+  dv-set-pwd: 设定 6 到 16 字位密码
+  dv-confirm-pwd: 确认密码
+
+  # 账号相关
+  user-sign-up: 账号注册
+  user-log-in: 账号登入
+  user-had-account: 已有账号，立即登入
+  user-have-not-account: 没有账号，立即注册
+  user-forget-psw: 忘记密码？
+  user-find-psw: 找回密码
+  user-remember-me: 记住我
+  my-profile: 个人信息
+  name: 真实姓名
+  nickname: 昵称
+  address: 地址
+  phone: 电话
+  birthday: 生日
+  gender: 性别
+  save: 保存
+  male: 男
+  female: 女

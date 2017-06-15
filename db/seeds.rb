@@ -5,9 +5,33 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-u = User.new
-u.email = "admin@test.com"           # 可以改成自己的 email
-u.password = "123456"                # 最少要六位
-u.password_confirmation = "123456"   # 最少要六位
-u.is_admin = true
-u.save
+
+# 新增 admin 账号  User #
+if User.find_by(email: 'admin@test.com').nil?
+  u = User.new
+  u.name = '测试管理员'
+  u.email = 'admin@test.com'
+  u.nickname = '测试管理员'
+  u.password = '11111111'
+  u.password_confirmation = '11111111'
+  u.is_admin = true
+  u.save
+  puts '创建管理员*1'
+else
+  puts '已创建过此账号，不重复新增。'
+end
+
+# 新增 user 账号  User #
+if User.find_by(email: 'user@test.com').nil?
+  u = User.new
+  u.name = '测试用户'
+  u.email = 'user@test.com'
+  u.nickname = '测试用户'
+  u.password = '11111111'
+  u.password_confirmation = '11111111'
+  u.is_admin = false
+  u.save
+  puts '创建一般用戶*1'
+else
+  puts '已创建过此账号，不重复新增。'
+end
