@@ -67,7 +67,7 @@ en:
   f-options: Operation Options
   f-hide: Hide
   f-submit: Submit
-  notice-no-image: No Image  
+  notice-no-image: No Image
 
   # 品牌管理
   brand-index: Brand Index
@@ -78,3 +78,13 @@ en:
   f-brand-description: Brand Description
   f-brand-products: Brand Products
   btn-brand-new: New Brand
+
+  # 大型管理 #
+  category-group-index: Category Group Index
+  category-group-new: New Category Group
+
+  # 细分品类管理 #
+  category-index: Category Index
+  f-category-name: Category Name
+  f-category-group: Category Group
+  btn-category-new: New Category

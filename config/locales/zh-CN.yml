@@ -78,3 +78,13 @@ zh-CN:
   f-brand-description: 品牌故事
   f-brand-products: 品牌商品一览
   btn-brand-new: 新增品牌
+
+  # 大型管理 #
+  category-group-index: 大型一览
+  category-group-new: 新增类型
+
+  # 细分品类管理 #
+  category-index: 分类一览
+  f-category-name: 分类名称
+  f-category-group: 类型
+  btn-category-new: 新增分类  
