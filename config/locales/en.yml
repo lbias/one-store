@@ -1,4 +1,6 @@
 en:
+# title & brand
+  j-and-z-select: J & Z SELECT
 
 # Devise 相关
   devise:
@@ -49,3 +51,48 @@ en:
   save: Save
   male: Male
   female: Female
+
+  # Navbar
+  signup: Sign Up
+  login: Log In
+  logout: Log Out
+  greeting: Hi!
+  product-access: Products
+  admin-access: Admin Console
+  user-center: My Profile
+  user-order: My Orders
+  language: Change Language
+
+  # 共用元素
+  f-options: Operation Options
+  f-hide: Hide
+  f-submit: Submit
+  notice-no-image: No Image
+
+  # 品牌管理
+  brand-index: Brand Index
+  brand-new: New Brand
+  brand-edit: Edit Brand
+  f-brand-name: Brand Name
+  f-brand-logo: Brand Logo
+  f-brand-description: Brand Description
+  f-brand-products: Brand Products
+  btn-brand-new: New Brand
+
+  # 大类管理 #
+  category-group-index: Category Group Index
+  category-group-new: New Category Group
+  category-group-edit: Edit Category Group
+  f-category-group: Category Group
+  f-category-groups: Category Groups
+  f-category-group-name: Category Group Name
+  f-category-group-categories: Categories  
+  btn-category-group-new: New Category Group
+
+  # 细分品类管理 #
+  category-index: Category Index
+  f-category-name: Category Name
+  btn-category-new: New Category
+  category-new: New Category
+  category-edit: Edit Category
+  f-category-products: Category Products

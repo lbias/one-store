@@ -1,0 +1,45 @@
+<!-- 页面标题 -->
+<h2><%= t('brand-index') %></h2>
+
+<!-- 新增品牌 -->
+<div class="pull-right">
+  <%= link_to(t('btn-brand-new'), new_admin_brand_path, :class => 'btn btn-md btn-info')%>
+</div>
+
+<!-- 品牌列表 -->
+<table class="table">
+  <!-- 品牌列表表头 -->
+  <thead>
+    <tr>
+      <th><%= t('f-brand-name') %></th>
+      <th><%= t('f-brand-description') %></th>
+      <th><%= t('f-options') %></th>
+    </tr>
+  </thead>
+
+  <!-- 品牌列表表单 -->
+  <% @brands.each do |brand| %>
+    <tr>
+      <td><%= render_brand_status(brand) %> <%= link_to(brand.name, admin_brand_path(brand)) %></td>
+      <td class="description-box"><%= simple_format(brand.description) %></td>
+      <!-- 操作选项 -->
+      <td class="action-box">
+        <!-- 编辑 -->
+        <%= link_to(edit_admin_brand_path(brand), class: "btn btn-md btn-default") do %>
+          <span class="fa fa-pencil"></span>
+        <% end %>
+
+        <!-- 发布／隐藏 -->
+        <% if brand.is_hidden %>
+          <%= link_to(publish_admin_brand_path(brand), :method => :post, class: "btn btn-md btn-default show-btn") do %>
+            <span class="fa fa-eye"></span>
+          <% end %>
+        <% else %>
+          <%= link_to(hide_admin_brand_path(brand), :method => :post, data: { confirm: "确定隐藏该品牌？" }, class: "btn btn-md btn-default") do %>
+            <span class="fa fa-eye-slash"></span>
+          <% end %>
+        <% end %>
+      </td>
+    </tr>
+  <% end %>
+</table>

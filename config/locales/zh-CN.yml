@@ -1,4 +1,6 @@
 zh-CN:
+# title & brand
+  j-and-z-select: J & Z SELECT
 
 # Devise 相关
   devise:
@@ -49,3 +51,48 @@ zh-CN:
   save: 保存
   male: 男
   female: 女
+
+  # Navbar
+  signup: 注册
+  login: 登录
+  logout: 退出
+  greeting: 您好！
+  product-access: 全部商品
+  admin-access: 管理员后台
+  user-center: 个人信息
+  user-order: 我的订单
+  language: 切换语言
+
+  # 共用元素
+  f-options: 操作选项
+  f-hide: 隐藏
+  f-submit: 确认提交
+  notice-no-image: 尚无图片
+
+  # 品牌管理
+  brand-index: 品牌一览
+  brand-new: 新增品牌
+  brand-edit: 编辑品牌
+  f-brand-name: 品牌名称
+  f-brand-logo: 品牌标志
+  f-brand-description: 品牌故事
+  f-brand-products: 品牌商品一览
+  btn-brand-new: 新增品牌
+
+  # 大类管理 #
+  category-group-index: 大类一览
+  category-group-new: 新增大类
+  category-group-edit: 编辑大类
+  f-category-group: 大类
+  f-category-groups: 大类
+  f-category-group-name: 大类名称
+  f-category-group-categories: 细分品类一览
+  btn-category-group-new: 新增大类
+
+  # 细分品类管理 #
+  category-index: 细分品类一览
+  f-category-name: 细分品类名称
+  btn-category-new: 新增细分品类
+  category-new: 新增细分品类
+  category-edit: 编辑细分分类
+  f-category-products: 细分品类商品一览

@@ -1,0 +1,9 @@
+<!-- 大类详情 -->
+<h1> <%= @category_group.name %> </h1>
+
+<!-- 改大类下的细分品类一览 -->
+<h3><%= t('f-category-group-categories') %></h3>
+
+<% @category_group.categories.each do |category| %>
+  <li><%= link_to(category.name, admin_category_path(category)) %></li>
+<% end %>

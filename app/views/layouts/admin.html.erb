@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Robot Store Console</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-  <div class="container">
-    <%= render "common/navbar" %>
-
-    <div class="row">
-      <div class="col-md-2">
-        <ul class="nav nav-pills nav-stacked" style="max-width: 300px;">
-          <li> <%= link_to("Products", admin_products_path) %> </li>
-          <li> <%= link_to("Orders", admin_orders_path) %> </li>
-        </ul>
+  <head>
+    <title><%= t('j-and-z-select') %></title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="shortcut icon" href="/images/favicon.ico">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <%= render "common/navbar" %>
+        <%= render "common/flashes" %>
       </div>
-
-      <div class="col-md-10">
-        <%= yield %>
+      <div class="row">
+        <div class="col-md-2 nav-sidebar">
+          <ul class="list-unstyled">
+            <!-- 商品管理 -->
+            <li><%= link_to admin_products_path do %> <span class="fa fa-cube"></span> <span><%= t('admin-product') %></span><% end %></li>
+            <!-- 品牌管理 -->
+            <li><%= link_to admin_brands_path do %> <span class="fa fa-google-wallet"></span> <span><%= t('admin-brand') %></span><% end %></li>
+            <!-- 品类管理 -->
+            <li><%= link_to admin_categories_path do %> <span class="fa fa-cubes"></span> <span><%= t('admin-category') %></span><% end %></li>
+            <!-- 订单管理 -->
+            <li><%= link_to admin_orders_path do %> <span class="fa fa-th-list"></span> <span><%= t('admin-order') %></span><% end %></li>
+          </ul>
+        </div>
+        <div class="col-md-10 admin-box">
+          <%= yield %>
+        </div>
       </div>
     </div>
-  </div>
-</body>
+    <%= render "common/footer" %>
+  </body>
 </html>

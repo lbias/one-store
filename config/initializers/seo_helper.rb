@@ -1,3 +1,3 @@
 SeoHelper.configure do |config|
-  config.site_name = "Robot Store"
+  config.site_name = "J & Z SELECT"
 end

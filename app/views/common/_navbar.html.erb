@@ -2,44 +2,63 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <a class="navbar-brand" href="/">Robot Store </a>
+      <!-- 网站 logo 和 brand -->
+      <%= link_to root_path, class: "navbar-brand logo-box scroll" do %>
+        <%= t('j-and-z-select') %>
+      <% end %>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active">
-          <%= link_to("Products", products_path) %>
-        </li>
+    <div class="collapse navbar-collapse top-nav" id="menu-4">
+      <!-- 商品总览 -->
+      <ul class="nav navbar-nav navbar-left">
+        <li><%= link_to(t('product-access'), products_path) %></li>
       </ul>
 
+      <!-- 账号操作 -->
       <ul class="nav navbar-nav navbar-right">
+        <!-- 购物车 -->
         <li>
-           <%= link_to carts_path do  %>
-              购物车 <i class="fa fa-shopping-cart"> </i> ( <%= current_cart.products.count %> )
-           <% end %>
+          <%= link_to carts_path do  %>
+            <i class='fa fa-shopping-cart'></i> ( <%= current_cart.products.count %> )
+          <% end %>
         </li>
+        <!-- 切换语言 -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <%= t('language') %>
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <!-- 语言种类 -->
+            <li><%= link_to "简体中文", :controller => controller_name, :action => action_name, :locale => "zh-CN" %></li>
+            <li><%= link_to "English", :controller => controller_name, :action => action_name, :locale => "en" %></li>
+          </ul>
+        </li>
+        <!-- 访客注册／登录 -->
         <% if !current_user %>
-          <li><%= link_to("注册", new_user_registration_path) %> </li>
-          <li><%= link_to(content_tag(:i, '登录', class: 'fa fa-sign-in'), new_user_session_path) %></li>
+          <li><%= link_to(t('signup'), new_user_registration_path) %> </li>
+          <li><%= link_to(t('login'), new_user_session_path) %></li>
         <% else %>
+          <!-- 用户下拉选单 -->
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              Hi!, <%= current_user.email %>
-              <b class="caret"></b>
+            <a href='#' class='dropdown-toggle' data-toggle='dropdown'>
+              <%= t('greeting') %>
+              <%= current_user.nickname %>
+              <b class='caret'></b>
             </a>
             <!-- 下拉选单 -->
             <ul class="dropdown-menu">
               <!-- admin 后台 -->
               <% if current_user.admin? %>
-                <li><%= link_to("Admin Console", admin_products_path ) %></li>
+                <li> <%= link_to(t('admin-access'), admin_products_path) %> </li>
                 <li class="divider"> </li>
               <% end %>
               <!-- 用户选项 -->
-              <li> <%= link_to("My Orders", account_orders_path ) %> </li>
-              <li> <%= link_to('My Profile', edit_account_user_path(current_user)) %> </li>
+              <li> <%= link_to(t('user-center'), edit_account_user_path(current_user)) %> </li>
+              <li> <%= link_to(t('user-order'), account_orders_path) %> </li>
               <li class="divider"> </li>
-              <li> <%= link_to(content_tag(:i, '退出', class: 'fa fa-sign-out'), destroy_user_session_path, method: :delete) %> </li>
+              <li> <%= link_to(t('logout'), destroy_user_session_path, method: :delete) %> </li>
             </ul>
           </li>
         <% end %>
