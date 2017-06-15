@@ -1,23 +1,51 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+
+# Devise 相关
+  devise:
+    failure:
+      unauthenticated: You must login.
+      not_found_in_database: This account is not found.
+      invalid: The email or password is not correct.
+    sessions:
+      signed_in: Welcome！
+      signed_out: You have logged out.
+
+  dv-warn-email: Please input your email.
+  dv-warn-name: Please input your name.
+  dv-warn-pwd: The password is incorrect, please check again.
+  dv-warn-pwd-characters: Password must be 6 ~ 16 characters.
+
+  dv-login: Log In
+  dv-signup: Sign Up
+  dv-email: Email
+  dv-pwd: Password
+  dv-remember-me: Remember Me
+  dv-forgot-pwd: Forget Password?
+  dv-check-email: you@example.com
+  dv-name: User Name
+  dv-find-pwd: Find Password
+  dv-account-signin: Plase log in.
+  dv-no-account-signup: Sign up now.
+  dv-user: User
+  dv-admin: Administrator
+  dv-set-pwd: Set 6 ~ 16 characters.
+  dv-confirm-pwd: Confirm Password.
+
+  # 账号相关
+  user-sign-up: Sign Up
+  user-log-in: Log In
+  user-had-account: Please log in.
+  user-have-not-account: Sign up now.
+  user-forget-psw: Forget Password?
+  user-find-psw: Find Password
+  user-remember-me: Remember Me
+  my-profile: My Profile
+  name: Name
+  nickname: Nickname
+  address: Address
+  phone: Phone
+  birthday: Birthday
+  gender: Gender
+  save: Save
+  male: Male
+  female: Female
