@@ -1,7 +1,7 @@
 class AddIsHiddenToProduct < ActiveRecord::Migration[5.0]
   def change
-    t.integer :category_id
-    t.integer :brand_id
-    t.boolean :is_hidden, default: true    
+    add_column :products, :category_id, :integer
+    add_column :products, :brand_id, :integer
+    add_column :products, :is_hidden, :boolean, default: true
   end
 end
