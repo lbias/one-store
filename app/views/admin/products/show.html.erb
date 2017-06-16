@@ -1,0 +1,25 @@
+<div class='col-xs-12 col-md-6 product-image'>
+
+<div class='col-xs-12 col-md-6'>
+  <h1> <%= @product.name %> </h1>
+
+  <!-- 所属大类 -->
+  <h3><%= t('f-category-group') %></h3>
+  <p><%= @product.category.category_group.name %></p>
+
+  <!-- 所属细分品类 -->
+  <h3><%= t('f-product-category') %></h3>
+  <p><%= @product.category.name %></p>
+
+  <!-- 所属品牌 -->
+  <h3><%= t('f-product-brand') %></h3>
+  <p><%= @product.brand.name %></p>
+
+  <!-- 商品价格 -->
+  <h3><%= t('f-product-price') %></h3>
+  <p><%= @product.price %></p>
+
+  <!-- 商品数量 -->
+  <h3><%= t('f-product-quantity') %></h3>
+  <p><%= @product.quantity %></p>
+</div>
