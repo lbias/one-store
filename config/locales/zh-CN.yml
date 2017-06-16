@@ -99,6 +99,8 @@ zh-CN:
 
   # 商品管理
   product-index: 商品列表
+  product-new: 新增商品
+  Product-edit: 编辑商品
   btn-product-new: 新增商品
   f-product-name: 商品名称
   f-product-brand: 商品品牌

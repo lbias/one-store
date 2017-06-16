@@ -99,6 +99,8 @@ en:
 
   # 商品管理
   product-index: Product List
+  product-new: 新增商品
+  Product-edit: 编辑商品
   btn-product-new: New Product
   f-product-name: Product Name
   f-product-brand: Product Brand
