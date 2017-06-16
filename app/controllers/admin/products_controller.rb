@@ -48,6 +48,10 @@ class Admin::ProductsController < ApplicationController
     end
   end
 
+  def show
+    @product = Product.find(params[:id])
+  end
+
   # 发布
   def publish
     @product = Product.find(params[:id])
