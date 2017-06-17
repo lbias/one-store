@@ -68,6 +68,8 @@ en:
   f-hide: Hide
   f-submit: Submit
   notice-no-image: No Image
+  btn-publish: Publish
+  btn-hide: Hide
 
   # 品牌管理
   brand-index: Brand Index
@@ -99,8 +101,8 @@ en:
 
   # 商品管理
   product-index: Product List
-  product-new: 新增商品
-  Product-edit: 编辑商品
+  product-new: New Product
+  Product-edit: Edit Product
   btn-product-new: New Product
   f-product-name: Product Name
   f-product-brand: Product Brand
@@ -109,3 +111,19 @@ en:
   f-product-quantity: Product Quantity
   f-product-description: Product Description
   f-product-price: Product Price
+
+  # 提示信息
+  message-add-to-cart-success: You added a product to cart!
+  message-already-added: This item has been added to the cart.
+
+  # 商品列表
+  no-product-data: The products are yet published.
+
+  # 商品详情页
+  product-brand: Brand
+  product-quantity: Quantity
+  product-quantity-none: No Stock
+  product-is-hidden: This product is off the shelf.
+  btn-add-to-cart: Add to Cart
+  btn-add-to-cart-none: No More Stock
+  btn-continue: Keep on Shopping 

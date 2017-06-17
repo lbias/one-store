@@ -68,6 +68,8 @@ zh-CN:
   f-hide: 隐藏
   f-submit: 确认提交
   notice-no-image: 尚无图片
+  btn-publish: 发布
+  btn-hide: 隐藏
 
   # 品牌管理
   brand-index: 品牌一览
@@ -109,3 +111,19 @@ zh-CN:
   f-product-quantity: 库存数量
   f-product-description: 商品描述
   f-product-price: 商品价格
+
+  # 提示信息
+  message-add-to-cart-success: 成功加入购物车！
+  message-already-added: 您的购物车已有此商品。
+
+  # 商品列表
+  no-product-data: 此分类暂时没有商品哦
+
+  # 商品详情页
+  product-brand: 品牌
+  product-quantity: 数量
+  product-quantity-none: 没有库存
+  product-is-hidden: 该商品已下架
+  btn-add-to-cart: 加入购物车
+  btn-add-to-cart-none: 商品缺货
+  btn-continue: 继续购物

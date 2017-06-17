@@ -1,7 +1,5 @@
 class Product < ApplicationRecord
-  mount_uploader :image, ImageUploader
-
-  # 新增/修改栏位限制与提示 #
+  # 新增/修改栏位限制与提示
   validates :title, presence: { message: "请输入商品名称" }
   validates :price, presence: { message: "请输入商品价格" }
   validates :price, numericality: { greater_than: 0, message: "请输入商品价格，必须大于零" }
@@ -13,13 +11,15 @@ class Product < ApplicationRecord
   belongs_to :category
   belongs_to :brand
   has_one :order_item
+  has_many :product_images, dependent: :destroy
+  accepts_nested_attributes_for :product_images
 
-  # 检查 is_hidden 的 boolean 值 #
+  # 检查 is_hidden 的 boolean 值
   def hidden?
     is_hidden
   end
 
-  # 发布 / 隐藏 #
+  # 发布 / 隐藏
   def publish!
     self.is_hidden = false
     self.save
@@ -30,7 +30,7 @@ class Product < ApplicationRecord
     self.save
   end
 
-  # Scope 
+  # Scope
   scope :published, -> { where(is_hidden: false) }
   scope :recent, -> { order('created_at DESC') }
 end
