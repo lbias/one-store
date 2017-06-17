@@ -20,12 +20,13 @@ class ImageUploader < CarrierWave::Uploader::Base
 
   process resize_to_fit: [800, 800]
 
-  version :thumb do
-    process resize_to_fill: [200,200]
-  end
-
   version :medium do
     process resize_to_fill: [400,400]
+  end
+
+  # 商品详情页小图，品牌 Logo
+  version :other do
+    process resize_to_fill: [200,200]
   end
 
   # Provide a default URL as a default if there hasn't been a file uploaded:
