@@ -1,9 +1,22 @@
 <div class="col-md-10 col-md-offset-1 admin-data-box">
   <hr style="size:2px" />
   <%= simple_form_for [:admin, @product] do |f| %>
-    <div class="group">
-      <%= f.input :image, as: :file %>
-    </div>
+    <!-- 判斷是否为 new 页面 -->
+    <% if @product.new_record? %>
+    <% else %>
+      <!-- 显示商品图片 -->
+      <div class='group'>
+        <% if @product.product_images.present? %>
+          <% @product.product_images.each do |p| %>
+            <%= image_tag p.image.other.url %>
+          <% end %>
+        <% end %>
+      </div>
+    <% end %>
+
+    <!-- 上传商品图片 -->
+    <%= f.label t('f-product-images') %><br>
+    <%= f.file_field :product_image, :multiple => true, name: 'product_images[image][]' %>
 
     <!-- 商品名称 -->
     <%= f.input :title, :label => t('f-product-name'), input_html: { class: 'width-50' } %>
