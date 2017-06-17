@@ -111,3 +111,7 @@ en:
   f-product-quantity: Product Quantity
   f-product-description: Product Description
   f-product-price: Product Price
+
+  # 提示信息
+  message-add-to-cart-success: You added a product to cart!
+  message-already-added: This item has been added to the cart.  
