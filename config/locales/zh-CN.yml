@@ -115,3 +115,6 @@ zh-CN:
   # 提示信息
   message-add-to-cart-success: 成功加入购物车！
   message-already-added: 您的购物车已有此商品。
+
+  # 商品列表
+  no-product-data: 此分类暂时没有商品哦

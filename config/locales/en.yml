@@ -101,8 +101,8 @@ en:
 
   # 商品管理
   product-index: Product List
-  product-new: 新增商品
-  Product-edit: 编辑商品
+  product-new: New Product
+  Product-edit: Edit Product
   btn-product-new: New Product
   f-product-name: Product Name
   f-product-brand: Product Brand
@@ -114,4 +114,7 @@ en:
 
   # 提示信息
   message-add-to-cart-success: You added a product to cart!
-  message-already-added: This item has been added to the cart.  
+  message-already-added: This item has been added to the cart.
+
+  # 商品列表
+  no-product-data: The products are yet published.
