@@ -18,10 +18,14 @@ class ImageUploader < CarrierWave::Uploader::Base
     "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
   end
 
-  process resize_to_fit: [800, 800]
-
+  # process resize_to_fit: [800, 800]
   version :medium do
     process resize_to_fill: [400,400]
+  end
+
+  # 商品详情页大图
+  version :main do
+    process resize_to_fill: [600, 400]
   end
 
   # 商品详情页小图，品牌 Logo
