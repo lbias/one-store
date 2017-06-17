@@ -118,3 +118,12 @@ en:
 
   # 商品列表
   no-product-data: The products are yet published.
+
+  # 商品详情页
+  product-brand: Brand
+  product-quantity: Quantity
+  product-quantity-none: No Stock
+  product-is-hidden: This product is off the shelf.
+  btn-add-to-cart: Add to Cart
+  btn-add-to-cart-none: No More Stock
+  btn-continue: Keep on Shopping 
