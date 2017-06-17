@@ -79,7 +79,7 @@ zh-CN:
   f-brand-products: 品牌商品一览
   btn-brand-new: 新增品牌
 
-  # 大类管理 #
+  # 大类管理
   category-group-index: 大类一览
   category-group-new: 新增大类
   category-group-edit: 编辑大类
@@ -89,10 +89,23 @@ zh-CN:
   f-category-group-categories: 细分品类一览
   btn-category-group-new: 新增大类
 
-  # 细分品类管理 #
+  # 细分品类管理
   category-index: 细分品类一览
   f-category-name: 细分品类名称
   btn-category-new: 新增细分品类
   category-new: 新增细分品类
   category-edit: 编辑细分分类
   f-category-products: 细分品类商品一览
+
+  # 商品管理
+  product-index: 商品列表
+  product-new: 新增商品
+  Product-edit: 编辑商品
+  btn-product-new: 新增商品
+  f-product-name: 商品名称
+  f-product-brand: 商品品牌
+  f-product-category: 商品细分品类
+  f-product-price: 商品价格
+  f-product-quantity: 库存数量
+  f-product-description: 商品描述
+  f-product-price: 商品价格

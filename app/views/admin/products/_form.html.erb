@@ -1,0 +1,33 @@
+<div class="col-md-10 col-md-offset-1 admin-data-box">
+  <hr style="size:2px" />
+  <%= simple_form_for [:admin, @product] do |f| %>
+    <div class="group">
+      <%= f.input :image, as: :file %>
+    </div>
+
+    <!-- 商品名称 -->
+    <%= f.input :title, :label => t('f-product-name'), input_html: { class: 'width-50' } %>
+
+    <!-- 选择细分品类 -->
+    <%= f.input :category_id, :label => t('f-product-category'), :collection => @categories, :checked => @product.category, input_html: { class: 'width-50' } %>
+
+    <!-- 选择品牌 -->
+    <%= f.input :brand_id, :label => t('f-product-brand'), :collection => @brands, :checked => @product.brand, input_html: { class: 'width-50' } %>
+
+    <!-- 商品描述 -->
+    <%= f.input :description, :label => t('f-product-description'), input_html: { class: 'height-200' } %>
+
+    <!-- 商品价格 -->
+    <%= f.input :price, :label => t('f-product-price'), input_html: { class: 'width-25' } %>
+
+    <!-- 商品数量 -->
+    <%= f.input :quantity, :label => t('f-product-quantity'), input_html: { class: 'width-25' } %>
+
+    <!-- 商品是否隐藏 -->
+    <span class="hidden-box"><%= f.input :is_hidden, :label => t('f-hide') %></span>
+
+    <div class="form-actions">
+      <%= f.submit t('f-submit'), class: 'btn btn-md btn-default' %>
+    </div>
+  <% end %>
+</div>

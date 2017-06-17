@@ -86,7 +86,7 @@ en:
   f-category-group: Category Group
   f-category-groups: Category Groups
   f-category-group-name: Category Group Name
-  f-category-group-categories: Categories  
+  f-category-group-categories: Categories
   btn-category-group-new: New Category Group
 
   # 细分品类管理 #
@@ -96,3 +96,16 @@ en:
   category-new: New Category
   category-edit: Edit Category
   f-category-products: Category Products
+
+  # 商品管理
+  product-index: Product List
+  product-new: 新增商品
+  Product-edit: 编辑商品
+  btn-product-new: New Product
+  f-product-name: Product Name
+  f-product-brand: Product Brand
+  f-product-category: Product Category
+  f-product-price: Product Price
+  f-product-quantity: Product Quantity
+  f-product-description: Product Description
+  f-product-price: Product Price
