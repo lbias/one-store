@@ -16,6 +16,9 @@ class Brand < ApplicationRecord
     self.save
   end
 
-  # Scope 
+  # Scope
   scope :published, -> { where(is_hidden: false) }
+
+  # 上传品牌 Logo 
+  mount_uploader :logo, ImageUploader
 end
