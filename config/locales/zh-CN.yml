@@ -129,6 +129,7 @@ zh-CN:
   btn-add-to-cart: 加入购物车
   btn-add-to-cart-none: 商品缺货
   btn-continue: 继续购物
+  nav-currency: 切换币值
 
   # will-paginate
   previous-label: <span class="fa fa-angle-double-left"></span>
@@ -167,7 +168,7 @@ zh-CN:
   order-status-paid-a: 付款成功，准备出货
   order-no-data: 你还没买过任何东西！
 
-  # 生成订单 
+  # 生成订单
   checkout-index: 订单详情
   f-billing-info: 付款信息
   f-billing-name: 付款人 - 姓名

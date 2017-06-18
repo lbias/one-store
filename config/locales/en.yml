@@ -129,6 +129,7 @@ en:
   btn-add-to-cart: Add to Cart
   btn-add-to-cart-none: No More Stock
   btn-continue: Keep on Shopping
+    nav-currency: Currency
 
   # will-paginate:
   previous-label: <span class="fa fa-angle-double-left"></span>
@@ -183,4 +184,4 @@ en:
   shipping-name: Shipping Name
   shipping-phone: Shipping Phone No.
   shipping-address: Shipping Address
-  btn-order-create: Confirm Order 
+  btn-order-create: Confirm Order

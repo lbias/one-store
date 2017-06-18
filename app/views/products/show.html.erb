@@ -28,7 +28,11 @@
             <h1><%= @product.title %></h1>
             <div class="price">
               <div class="left-box">
-                <h3><%= @product.price %></h3>
+                <h3><%= render_product_price(@product) %></h3>
+              </div>
+              <div class="right-box currency">
+                <!-- 币种转换 -->
+                <%= render 'products/currency' %>
               </div>
             </div>
             <p><%= simple_format(@product.description) %></p>
@@ -64,7 +68,7 @@
           <hr />
 
           <!-- 如果库存大于零 -->
-          <% if @product.quantity > 0 %>
+          <% if @orderSum < @product.quantity && @product.quantity > 0 %>
             <!-- 加入购物车 -->
             <button class="btn btn-md btn-default" type="submit">
               <%= t('btn-add-to-cart')%>
