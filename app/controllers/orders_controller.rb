@@ -5,6 +5,13 @@ class OrdersController < ApplicationController
     @order = Order.new(order_params)
     @order.user = current_user
     @order.total = current_cart.total_price
+    if session[:currency].present? # 搜寻币值数据
+      @currency_s = session[:currency]
+    else # 预设币值为新币
+      @currency_s = 'Singapore Dollar'
+    end
+    @currency = Currency.find_by(name: @currency_s)
+    @order.currency = @currency.symbol
     if @order.save
       current_cart.cart_items.each do |cart_item|
         product_list = ProductList.new
