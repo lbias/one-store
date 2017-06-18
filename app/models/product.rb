@@ -13,6 +13,8 @@ class Product < ApplicationRecord
   has_one :order_item
   has_many :product_images, dependent: :destroy
   accepts_nested_attributes_for :product_images
+  has_many :wish_lists
+  has_many :wish_list_owners, :through => :wish_lists, :source => :user
 
   # 检查 is_hidden 的 boolean 值
   def hidden?
@@ -30,7 +32,11 @@ class Product < ApplicationRecord
     self.save
   end
 
+  def to_param
+    "#{self.id}-#{self.name.gsub(/\s+/, "")}"
+  end
+
   # Scope
   scope :published, -> { where(is_hidden: false) }
-  scope :recent, -> { order('created_at DESC') }
+  scope :recent, -> { order('created_at DESC') }  
 end
