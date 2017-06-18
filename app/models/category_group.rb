@@ -21,4 +21,7 @@ class CategoryGroup < ApplicationRecord
 
   # 上传大类 Logo
   mount_uploader :logo, ImageUploader
+
+  # 上传大类图片
+  mount_uploader :image, GroupUploader
 end
