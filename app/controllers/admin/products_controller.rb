@@ -7,7 +7,7 @@ class Admin::ProductsController < ApplicationController
   layout "admin"
 
   def index
-    @products = Product.all.paginate(:page => params[:page], :per_page => 10)
+    @products = Product.all.recent.paginate(:page => params[:page], :per_page => 10)
   end
 
   def new

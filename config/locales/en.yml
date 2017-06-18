@@ -67,6 +67,7 @@ en:
   f-options: Operation Options
   f-hide: Hide
   f-submit: Submit
+  f-image-upload: Upload Image
   notice-no-image: No Image
   btn-publish: Publish
   btn-hide: Hide
@@ -130,4 +131,4 @@ en:
 
   # will-paginate:
   previous-label: <span class="fa fa-angle-double-left"></span>
-  next-label: <span class="fa fa-angle-double-right"></span>  
+  next-label: <span class="fa fa-angle-double-right"></span>
