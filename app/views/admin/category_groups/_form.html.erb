@@ -5,6 +5,7 @@
   <% end %>
   <%= simple_form_for [:admin, @category_group] do |f| %>
     <%= f.input :name, :label => t('f-category-group-name') %>
+    <%= f.input :image, :label => t('f-image-upload') %>
     <span class="hidden-box"><%= f.input :is_hidden, :label => t('f-hide') %></span>
     <div class="form-actions">
       <%= f.submit t('f-submit'), class: 'btn btn-md btn-default' %>
