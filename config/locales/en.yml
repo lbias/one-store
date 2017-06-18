@@ -132,3 +132,19 @@ en:
   # will-paginate:
   previous-label: <span class="fa fa-angle-double-left"></span>
   next-label: <span class="fa fa-angle-double-right"></span>
+
+  # 购物车
+  cart-index: Cart
+  cart-clear: Clear Cart
+  cart-list: Cart List
+  f-cart-product-info: Product Info
+  f-cart-product-price: Product Price
+  f-cart-product-quantity: Product Quantity
+  f-cart-product-count: Product Amount
+  f-cart-shipping-fee: Shipping Fee
+  f-cart-free-shipping: Free Shipping
+  f-cart-total: Total Amount：
+  btn-checkout: Checkout
+  cart-notice: Reminder, please complete payment within one hour.
+  cart-no-data: No product in the cart.
+  cart-suggest: J & Z SELECT suggests for you：  

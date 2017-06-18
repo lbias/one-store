@@ -132,3 +132,19 @@ zh-CN:
   # will-paginate
   previous-label: <span class="fa fa-angle-double-left"></span>
   next-label: <span class="fa fa-angle-double-right"></span>
+
+  # 购物车 
+  cart-index: 购物车
+  cart-clear: 清空购物车
+  cart-list: 购物清单
+  f-cart-product-info: 商品详情
+  f-cart-product-price: 商品价格
+  f-cart-product-quantity: 商品数量
+  f-cart-product-count: 小计
+  f-cart-shipping-fee: 运费
+  f-cart-free-shipping: 免运费
+  f-cart-total: 合计：
+  btn-checkout: 前往结帐
+  cart-notice: 提醒您：请于订单确认后一小时内完成付款手续。
+  cart-no-data: 您尚未加入任何商品。
+  cart-suggest: J & Z SELECT 诚挚向您推荐：
