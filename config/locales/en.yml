@@ -126,4 +126,8 @@ en:
   product-is-hidden: This product is off the shelf.
   btn-add-to-cart: Add to Cart
   btn-add-to-cart-none: No More Stock
-  btn-continue: Keep on Shopping 
+  btn-continue: Keep on Shopping
+
+  # will-paginate:
+  previous-label: <span class="fa fa-angle-double-left"></span>
+  next-label: <span class="fa fa-angle-double-right"></span>  

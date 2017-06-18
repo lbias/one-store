@@ -127,3 +127,7 @@ zh-CN:
   btn-add-to-cart: 加入购物车
   btn-add-to-cart-none: 商品缺货
   btn-continue: 继续购物
+
+  # will-paginate
+  previous-label: <span class="fa fa-angle-double-left"></span>
+  next-label: <span class="fa fa-angle-double-right"></span>
