@@ -1,0 +1,17 @@
+<!-- 币值切换 -->
+<div class='dropdown btn-group clearfix'>
+  <button class='btn dropdown-toggle' type='button' data-toggle='dropdown'>
+    <%= t('nav-currency') %> <i class="fa fa-angle-down"></i>
+  </button>
+  <!-- 下拉选单 -->
+  <ul class='dropdown-menu dropdown-menu-right'>
+    <!-- 选单列出所有币种 -->
+    <% @currencies.each do |currency| %>
+      <li>
+        <%= link_to setup_currency_product_path(:currency => currency.name), method: :post, :remote => true do %>
+          <%= currency.symbol %> - <%= currency.name %>
+        <% end %>
+      </li>
+    <% end %>
+  </ul>
+</div>

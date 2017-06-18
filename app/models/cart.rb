@@ -2,10 +2,16 @@ class Cart < ApplicationRecord
   has_many :cart_items
   has_many :products, through: :cart_items, source: :product
 
-  def add_product_to_cart(product)
+  def add_product_to_cart(product, quantity)
     ci = cart_items.build
     ci.product = product
-    ci.quantity = 1
+    ci.quantity = quantity
+    ci.save
+  end
+
+  def update_product_to_cart(product,quantity)
+    ci = cart_items.find_by(product)
+    ci.quantity = quantity
     ci.save
   end
 
@@ -21,5 +27,5 @@ class Cart < ApplicationRecord
 
   def clean!
     cart_items.destroy_all
-  end  
+  end
 end

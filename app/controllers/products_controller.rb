@@ -37,6 +37,7 @@ class ProductsController < ApplicationController
     # 大类 / 品牌
     @category_groups = CategoryGroup.published.recent.paginate(:page => params[:page], :per_page => 12)
     @brands = Brand.published
+    @currencies = Currency.all
 
     set_page_title       @product.title
     set_page_description @product.description
@@ -52,6 +53,11 @@ class ProductsController < ApplicationController
     else
       flash[:warning] = t('message-already-added')
     end
+    redirect_to :back
+  end
+
+  def setup_currency
+    set_currency
     redirect_to :back
   end
 end

@@ -6,7 +6,7 @@ Rails.application.routes.draw do
     resources :products do
       member do
         post :publish
-        post :hide        
+        post :hide
       end
     end
     resources :orders do
@@ -40,6 +40,7 @@ Rails.application.routes.draw do
   resources :products do
     member do
       post :add_to_cart
+      post :setup_currency
     end
   end
 
