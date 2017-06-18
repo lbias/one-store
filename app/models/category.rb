@@ -19,5 +19,8 @@ class Category < ApplicationRecord
   end
 
   # Scope
-  scope :published, -> { where(is_hidden: false) }  
+  scope :published, -> { where(is_hidden: false) }
+
+  # 上传细分品类 Logo
+  mount_uploader :logo, ImageUploader
 end
