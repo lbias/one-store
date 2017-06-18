@@ -40,12 +40,17 @@
             <p>
               <!-- 如果库存大于零 -->
               <% if @product.quantity > 0 %>
-                <div class="quantity-box">
-                  <div class="left-box"><%= t('product-quantity') %>：</div>
-                  <% if @product_stock <= 10 %>
-                  <span class="quantity-stock">(库存数量：<%= @product_stock %>)</span>
-                  <% end %>
+              <div class="quantity-box">
+                <div class="left-box"><%= t('product-quantity') %>：</div>
+                <div class="left-box quantity-button">
+                  <%= link_to("-", "", id: "quantity-down", class: "quantity-actions") %>
+                  <input type="text" name="quantity" value="1" id="quantity" max="<%= @product.quantity - @orderSum %>" class="quantity-input">
+                  <%= link_to("+", "", id: "quantity-up", class: "quantity-actions") %>
                 </div>
+                <% if @product_stock <= 10 %>
+                  <span class="quantity-stock">(库存数量：<%= @product_stock %>)</span>
+                <% end %>
+              </div>
 
               <!-- 如果沒有库存 -->
               <% else %>
@@ -60,7 +65,7 @@
 
           <!-- 如果库存大于零 -->
           <% if @product.quantity > 0 %>
-            <!-- 加入購物車 -->
+            <!-- 加入购物车 -->
             <button class="btn btn-md btn-default" type="submit">
               <%= t('btn-add-to-cart')%>
             </button>
