@@ -150,7 +150,7 @@ zh-CN:
   cart-no-data: 您尚未加入任何商品。
   cart-suggest: J & Z SELECT 诚挚向您推荐：
 
-  # 用户历史订单 
+  # 用户历史订单
   account-order-index: 历史订单
   f-order-created-at: 下订日期 / 年 /时间
   order-id: 订单编号
@@ -166,3 +166,21 @@ zh-CN:
   order-status-placed-a: 用户下单，等待付款
   order-status-paid-a: 付款成功，准备出货
   order-no-data: 你还没买过任何东西！
+
+  # 生成订单 
+  checkout-index: 订单详情
+  f-billing-info: 付款信息
+  f-billing-name: 付款人 - 姓名
+  f-billing-address: 付款人 - 帐单地址
+  f-shipping-info: 寄送信息
+  f-shipping-name: 收件人 - 姓名
+  f-shipping-phone: 收件人 - 电话（选填）
+  f-shipping-address: 收件人 - 收货地址
+  f-input-address: 请输入地址
+  f-payment-method: 付款方式
+  billing-name: 真实姓名
+  billing-address: 账单地址
+  shipping-name: 真实姓名
+  shipping-phone: 联系电话
+  shipping-address: 收件地址
+  btn-order-create: 确认下单

@@ -165,4 +165,22 @@ en:
   order-status-returned: Order products returned.
   order-status-placed-a: Order placed, pending payment.
   order-status-paid-a: Order paid, pending shipping.
-  order-no-data: You haven't placed order yet.     
+  order-no-data: You haven't placed order yet.
+
+  # 生成订单
+  checkout-index: Order Info
+  f-billing-info: Billing Info
+  f-billing-name: Billing Name
+  f-billing-address: Billing Address
+  f-shipping-info: Shipping Info
+  f-shipping-name: Shipping Name
+  f-shipping-phone: Shipping Phone No.
+  f-shipping-address: Shipping Address
+  f-input-address: Please input address
+  f-payment-method: Payment Method
+  billing-name: Billing Name
+  billing-address: Billing Address
+  shipping-name: Shipping Name
+  shipping-phone: Shipping Phone No.
+  shipping-address: Shipping Address
+  btn-order-create: Confirm Order 
