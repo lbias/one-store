@@ -149,3 +149,20 @@ en:
   cart-notice: Reminder, please complete payment within one hour.
   cart-no-data: No product in the cart.
   cart-suggest: J & Z SELECT suggests for you：
+
+  # 用户历史订单
+  account-order-index: Order List
+  f-order-created-at: Order Created Date
+  order-id: Order ID
+  order-total: Order Amount
+  order-date: Order Date
+  order-status: Oder Status
+  order-status-placed: Order placed, pending payment.
+  order-status-paid: Order paid, pending shipping.
+  order-status-shipping: Shipping
+  order-status-shipped: Order shipped.
+  order-status-cancelled: Order Cancelled.
+  order-status-returned: Order products returned.
+  order-status-placed-a: Order placed, pending payment.
+  order-status-paid-a: Order paid, pending shipping.
+  order-no-data: You haven't placed order yet.     

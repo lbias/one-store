@@ -1,17 +1,47 @@
-<h2>订单列表 </h2>
-<table class="table table-bordered">
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>生成时间</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @orders.each do |order| %>
-    <tr>
-      <td> <%= link_to(order.id, order_path(order.token)) %> </td>
-      <td> <%= order.created_at.to_s(:long) %> </td>
-    </tr>
-    <% end %>
-  </tbody>
-</table>
+<div class="product-box">
+  <div class="container">
+    <div class='row content-box order-box'>
+      <div class='col-md-8 col-md-offset-2'>
+        <!-- 页面标题 -->
+        <h3><i class='fa fa-credit-card'></i> <%= t('account-order-index') %></h3>
+
+        <!-- 如果有订单资料，显示订单内容 -->
+        <% if @orders.length > 0 %>
+
+          <!-- 用户历史订单 -->
+          <table class='table table-hover'>
+            <!-- 订单列表标题 -->
+            <thead>
+              <tr>
+                <th><%= t('order-id') %></th>
+                <th><%= t('order-total') %></th>
+                <th><%= t('order-date') %></th>
+                <th><%= t('order-status') %></th>
+              </tr>
+            </thead>
+            <!-- 订单列表内容 -->
+            <tbody>
+              <% @orders.each do |order| %>
+              <tr>
+                <td class="width-25"># <%= link_to(order.id, order_path(order.token)) %></td>
+                <td><%= order.currency %> <%= order.total %></td>
+                <td><%= order.created_at.strftime("%Y-%m-%d - %H:%M") %></td>
+                <td><%= render_order_status(order) %></td>
+              </tr>
+              <% end %>
+            </tbody>
+          </table>
+
+        <!-- 如果没有历史订单 -->
+        <% else %>
+          <div class="buy-box">
+            <h1><%= t('order-no-data') %></h1>
+            <br/>
+            <%= link_to(t('btn-buy-now'), products_path, class:'btn btn-lg btn-default' ) %>
+          </div>
+        <% end %>
+
+      </div>
+    </div>
+  </div>
+</div>
