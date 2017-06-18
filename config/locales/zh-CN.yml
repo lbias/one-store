@@ -51,6 +51,7 @@ zh-CN:
   save: 保存
   male: 男
   female: 女
+  warning-not-admin: 你不是管理员
 
   # Navbar
   signup: 注册
@@ -133,7 +134,7 @@ zh-CN:
   previous-label: <span class="fa fa-angle-double-left"></span>
   next-label: <span class="fa fa-angle-double-right"></span>
 
-  # 购物车 
+  # 购物车
   cart-index: 购物车
   cart-clear: 清空购物车
   cart-list: 购物清单

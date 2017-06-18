@@ -51,6 +51,7 @@ en:
   save: Save
   male: Male
   female: Female
+  warning-not-admin: You are not admin.
 
   # Navbar
   signup: Sign Up
@@ -147,4 +148,4 @@ en:
   btn-checkout: Checkout
   cart-notice: Reminder, please complete payment within one hour.
   cart-no-data: No product in the cart.
-  cart-suggest: J & Z SELECT suggests for you：  
+  cart-suggest: J & Z SELECT suggests for you：
