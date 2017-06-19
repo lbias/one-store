@@ -185,3 +185,13 @@ en:
   shipping-phone: Shipping Phone No.
   shipping-address: Shipping Address
   btn-order-create: Confirm Order
+
+  # 品牌广告管理
+  intro-index: Intro List
+  intro-new: Add Intro
+  intro-edit: Edit Intro
+  f-intro-title: Intro Title
+  f-intro-content: Intro Content
+  f-intro-link: Intro Link
+  f-intro-image: Intro Image
+  btn-intro-new: Add Intro

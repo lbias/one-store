@@ -185,3 +185,13 @@ zh-CN:
   shipping-phone: 联系电话
   shipping-address: 收件地址
   btn-order-create: 确认下单
+
+  # 品牌广告管理 
+  intro-index: 广告一览
+  intro-new: 新增广告
+  intro-edit: 编辑广告
+  f-intro-title: 广告名称
+  f-intro-content: 广告介绍
+  f-intro-link: 广告链接
+  f-intro-image: 广告图片
+  btn-intro-new: 新增广告
