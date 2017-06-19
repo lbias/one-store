@@ -211,3 +211,8 @@ zh-CN:
   message-payment-success: 已完成付款。
   message-cancel-request-sent: 已提交申请，J & Z SELECT 会尽速与您联系。
   message-payment-failed: 付款失败。
+
+  # 愿望清单
+  account-wish-list-index: 愿望清单
+  btn-move-to-cart: 添加到购物车
+  wish-no-data: 您尚未收藏任何商品。

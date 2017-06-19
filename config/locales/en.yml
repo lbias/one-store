@@ -210,4 +210,9 @@ en:
   message-clear-cart-success: The cart is cleared.
   message-payment-success: Payment completed.
   message-cancel-request-sent: Cancel request is sent, J & Z will contact you soon.
-  message-payment-failed: Payment isn't successful. 
+  message-payment-failed: Payment isn't successful.
+
+  # 愿望清单
+  account-wish-list-index: Wish List
+  btn-move-to-cart: Add to cart
+  wish-no-data: No item in wish list.   

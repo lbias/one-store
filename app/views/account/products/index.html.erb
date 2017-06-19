@@ -1,0 +1,59 @@
+<div class="product-box">
+  <div class="container">
+    <div class='row content-box'>
+      <div class='col-md-12'>
+        <!-- 页面标题 -->
+        <h3><i class='fa fa-gift'></i> <%= t('account-wish-list-index') %></h3>
+        <hr />
+        <!-- 用户愿望清单 -->
+        <div class="row">
+          <!-- 如果愿望清单有商品，显示商品内容  -->
+          <% if @products.length > 0 %>
+
+            <!-- 愿望清单列表内容 -->
+            <% @products.each do |product| %>
+              <div class="col-md-12 cart-item-box">
+              <!-- 商品图片  -->
+                <%= link_to product_path(product) do %>
+                  <% if product.product_images.present? %>
+                    <!-- 显示第一张图片  -->
+                    <%= image_tag(product.product_images[0].image.other.url)%>
+                  <% else %>
+                    <%= image_tag('http://placehold.it/100x100&text=No Pic') %>
+                  <% end %>
+                <% end %>
+                <div class="name"><%= link_to(product.name, product_path(product)) %></div>
+                <div class="price"><%= render_product_price(product) %></div>
+                <!-- 添加到购物车 -->
+                <div>
+                  <%= link_to add_to_cart_account_product_path(product), method: :post do %>
+                    <%= t('btn-move-to-cart') %>
+                  <% end %>
+                </div>
+                <!-- 从愿望清单上删除该商品 -->
+                <div>
+                  <%= link_to remove_from_wish_list_account_product_path(product), method: :post do %>
+                    <i class='fa fa-close'></i>
+                  <% end %>
+                </div>
+                <hr />
+              </div>
+            <% end %>
+
+          <!-- 如果愿望清单没有商品 -->
+          <% else %>
+
+            <div class="buy-box">
+              <h3><%= t('wish-no-data') %></h3>
+              <h3><%= t('wish-suggest') %></h3>
+              <br/>
+              <div class='col-md-12'>
+                <%= link_to(t('btn-buy-now'), products_path, class:'btn btn-lg btn-default' ) %>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
