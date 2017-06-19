@@ -1,4 +1,6 @@
 class ProductsController < ApplicationController
+  before_action :authenticate_user!, only: [:add_to_wish_list, :remove_from_wish_list]
+
   def index
     # 商品大型 / 品牌
     @category_groups = CategoryGroup.published
@@ -58,6 +60,24 @@ class ProductsController < ApplicationController
 
   def setup_currency
     set_currency
+    redirect_to :back
+  end
+
+  # 把商品加入愿望清单
+  def add_to_wish_list
+    @product = Product.find(params[:id])
+    if !current_user.is_wish_list_owner_of?(@product)
+      current_user.add_to_wish_list!(@product)
+    end
+    redirect_to :back
+  end
+
+  # 从愿望清单上删除该商品
+  def remove_from_wish_list
+    @product = Product.find(params[:id])
+    if current_user.is_wish_list_owner_of?(@product)
+      current_user.remove_from_wish_list!(@product)
+    end
     redirect_to :back
   end
 end
