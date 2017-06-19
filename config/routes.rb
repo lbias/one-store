@@ -40,13 +40,15 @@ Rails.application.routes.draw do
         post :publish
         post :hide
       end
-    end    
+    end
   end
 
   resources :products do
     member do
       post :add_to_cart
       post :setup_currency
+      post :add_to_wish_list
+      post :remove_from_wish_list
     end
   end
 
@@ -73,5 +75,12 @@ Rails.application.routes.draw do
     resources :orders
     # 用户信息
     resources :users
+    # 收藏清单
+    resources :products do
+      member do
+        post :add_to_cart
+        post :remove_from_wish_list
+      end
+    end
   end
 end
