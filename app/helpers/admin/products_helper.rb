@@ -8,12 +8,19 @@ module Admin::ProductsHelper
     end
   end
 
-  # 判断h商品隐藏状态，显示 Public/Hidden 按钮
+  # 判断商品隐藏状态，显示 Public/Hidden 按钮
   def render_product_publish_or_hide(product)
     if product.is_hidden
       link_to(t('btn-publish'), publish_admin_product_path(product), :method => :post, :class => 'btn btn-sm btn-default')
     else
       link_to(t('btn-hide'), hide_admin_product_path(product), :method => :post, :class => 'btn btn-sm btn-default')
+    end
+  end
+
+  # 判断商品是否为精选商品 
+  def render_product_chosen_status(product)
+    if product.is_chosen
+      content_tag(:span, "", :class => "fa fa-heart fa-fw")
     end
   end
 end
