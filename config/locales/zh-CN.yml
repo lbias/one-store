@@ -133,6 +133,12 @@ zh-CN:
 
   # 商品列表
   no-product-data: 此分类暂时没有商品哦
+  nav-brand: 精选品牌
+  order-btn-title: 默认排序
+  order-btn-hot: 依热销度
+  order-btn-recent: 依上架时间
+  order-btn-price-h: 依价格排序：高至低
+  order-btn-price-l: 依价格排序：低至高
 
   # 商品详情页
   product-brand: 品牌

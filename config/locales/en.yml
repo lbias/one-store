@@ -125,7 +125,7 @@ en:
   f-product-material: Product Material
   f-product-country: Product Origin
   f-product-chosen: Product Selection
-  f-product-images: Product Images  
+  f-product-images: Product Images
 
   # 提示信息
   message-add-to-cart-success: You added a product to cart!
@@ -133,6 +133,12 @@ en:
 
   # 商品列表
   no-product-data: The products are yet published.
+  nav-brand: Brand Selection
+  order-btn-title: Default Order
+  order-btn-hot: By Hotness
+  order-btn-recent: From New to Old
+  order-btn-price-h: Price High to Low
+  order-btn-price-l: Price Low to High   
 
   # 商品详情页
   product-brand: Brand
