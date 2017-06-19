@@ -135,7 +135,15 @@ en:
   btn-add-to-cart: Add to Cart
   btn-add-to-cart-none: No More Stock
   btn-continue: Keep on Shopping
-    nav-currency: Currency
+  nav-currency: Currency
+  wish-list-add: Add to Wish List
+  wish-list-remove: Remove
+  best-matches: J & Z SELECT Recommendation
+  product-size: Size
+  product-material: Material
+  product-country: Origin
+  product-color: Color
+  product-chosen: Selection      
 
   # will-paginate:
   previous-label: <span class="fa fa-angle-double-left"></span>

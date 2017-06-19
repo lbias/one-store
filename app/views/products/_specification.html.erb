@@ -1,4 +1,22 @@
-<!-- 商品规格：颜色 -->
+<!-- 商品规格：颜色，尺寸，材料，产地 -->
+
+<% if @product.size.present? %>
+<p>
+  <%= t('product-size') %>：<%= @product.size %>
+</p>
+<% end %>
+
+<% if @product.material.present? %>
+<p>
+  <%= t('product-material') %>：<%= @product.material %>
+</p>
+<% end %>
+
+<% if @product.country.present? %>
+  <p>
+    <%= t('product-country') %>：<%= @product.country %>
+  </p>
+<% end %>
 
 <div class='color-circle'>
   <% if @product.colors.present? %>
