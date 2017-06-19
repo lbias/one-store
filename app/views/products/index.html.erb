@@ -10,7 +10,8 @@
     <% else %>
       <%= image_tag("product_bg.jpg", class: "background-image") %>
     <% end %>
-
+    <!-- 商品类型，品牌选单 -->
+    <%= render "products/menu" %>
     <!-- 商品列表 -->
     <% if @products.length > 0 %>
       <div class='row'>
@@ -22,7 +23,7 @@
                 <!-- 显示第一张图片 -->
                 <% if product.is_chosen %>
                   <div class="chosen-box"><%= t('product-chosen') %></div>
-                <% end %>                
+                <% end %>
                 <%= image_tag(product.product_images[0].image.other.url, class: 'thumbnail')%>
               <% else %>
                 <%= image_tag('http://placehold.it/200x200&text=No Pic', class: 'thumbnail') %>
