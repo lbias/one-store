@@ -195,3 +195,10 @@ en:
   f-intro-link: Intro Link
   f-intro-image: Intro Image
   btn-intro-new: Add Intro
+
+  # 管理员控制台
+  admin-order: Orders
+  admin-product: Products
+  admin-brand: Brands
+  admin-category: Categories
+  admin-homepage: Homepage Banner    

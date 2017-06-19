@@ -186,7 +186,7 @@ zh-CN:
   shipping-address: 收件地址
   btn-order-create: 确认下单
 
-  # 品牌广告管理 
+  # 品牌广告管理
   intro-index: 广告一览
   intro-new: 新增广告
   intro-edit: 编辑广告
@@ -195,3 +195,10 @@ zh-CN:
   f-intro-link: 广告链接
   f-intro-image: 广告图片
   btn-intro-new: 新增广告
+
+  # 管理员控制台
+  admin-order: 订单管理
+  admin-product: 商品管理
+  admin-brand: 品牌管理
+  admin-category: 品类管理
+  admin-homepage: 首页广告管理
