@@ -17,6 +17,13 @@
 
       <!-- 账号操作 -->
       <ul class="nav navbar-nav navbar-right">
+        <li class="divider" role="separator"></li>
+        <!-- 願望清單 -->
+        <li>
+          <%= link_to account_products_path do %>
+            <%= t('wish-list') %> <i class='fa fa-gift'></i>
+          <% end %>
+        </li>
         <!-- 购物车 -->
         <li>
           <%= link_to carts_path do  %>

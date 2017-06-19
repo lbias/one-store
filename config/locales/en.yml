@@ -58,11 +58,17 @@ en:
   login: Log In
   logout: Log Out
   greeting: Hi!
+  wish-list: Wish List
+  cart: Cart
+  brand-access: Brand Access
+  recommend-access: Recommend Access
   product-access: Products
   admin-access: Admin Console
+  account-order-access: My Orders
   user-center: My Profile
-  user-order: My Orders
+  user-order: Admin Orders
   language: Change Language
+  keywords: Search Product
 
   # 共用元素
   f-options: Operation Options
@@ -201,4 +207,18 @@ en:
   admin-product: Products
   admin-brand: Brands
   admin-category: Categories
-  admin-homepage: Homepage Banner    
+  admin-homepage: Homepage Banner
+
+  # 提示信息
+  message-add-to-cart-success: Added to cart.
+  message-already-added: Already added.
+  message-confirm-clear-cart: Are you sure to clear the cart?
+  message-clear-cart-success: The cart is cleared.
+  message-payment-success: Payment completed.
+  message-cancel-request-sent: Cancel request is sent, J & Z will contact you soon.
+  message-payment-failed: Payment isn't successful.
+
+  # 愿望清单
+  account-wish-list-index: Wish List
+  btn-move-to-cart: Add to cart
+  wish-no-data: No item in wish list.
