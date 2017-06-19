@@ -58,11 +58,17 @@ zh-CN:
   login: 登录
   logout: 退出
   greeting: 您好！
+  wish-list: 愿望清单
+  cart: 购物车
+  brand-access: 品牌故事
+  recommend-access: 热门推荐
   product-access: 全部商品
   admin-access: 管理员后台
+  account-order-access: 我的订单
   user-center: 个人信息
-  user-order: 我的订单
+  user-order: 订单管理
   language: 切换语言
+  keywords: 搜索商品
 
   # 共用元素
   f-options: 操作选项
@@ -216,3 +222,20 @@ zh-CN:
   account-wish-list-index: 愿望清单
   btn-move-to-cart: 添加到购物车
   wish-no-data: 您尚未收藏任何商品。
+
+  # Navbar #
+  signup: 注册
+  login: 登录
+  logout: 退出
+  greeting: 您好，
+  wish-list: 愿望清单
+  cart: 购物车
+  language: 语言
+  product-access: 精选商品
+  brand-access: 品牌故事
+  recommend-access: 热门推荐
+  admin-access: 管理员控制台
+  account-order-access: 我的订单
+  user-center: 我的信息
+  user-order: 我的订单
+  keywords: 搜索商品
