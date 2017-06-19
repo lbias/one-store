@@ -1,0 +1,49 @@
+<!-- 页面标题 -->
+<h2><%= t('intro-index') %></h2>
+
+<!-- 新增广告 -->
+<div class='pull-right'>
+  <%= link_to(t('btn-intro-new'), new_admin_intro_path, :class => 'btn btn-md btn-info')%>
+</div>
+
+<!-- 广告列表 -->
+<table class='table'>
+  <!-- 广告列表标题 -->
+  <thead>
+    <tr>
+      <th><%= t('f-intro-title') %></th>
+      <th><%= t('f-intro-content') %></th>
+      <th><%= t('f-intro-link') %></th>
+      <th><%= t('f-options') %></th>
+    </tr>
+  </thead>
+
+  <!-- 广告列表内容 -->
+  <% @intros.each do |intro| %>
+    <tr>
+      <td><%= render_intro_status(intro) %> <%= intro.title %></td>
+      <td><%= intro.content %></td>
+      <td><%= intro.link %></td>
+      <!-- 操作选项 -->
+      <td class="action-box">
+        <%= link_to(edit_admin_intro_path(intro), class: "btn btn-md btn-default") do %>
+          <span class="fa fa-pencil"></span>
+        <% end %>
+        <%= link_to(admin_intro_path(intro), method: :delete, data: { confirm: "确定删除该广告?" }, class: "btn btn-md btn-default") do %>
+          <span class="fa fa-trash-o"></span>
+        <% end %>
+
+        <!-- 发布 / 隐藏 -->
+        <% if intro.is_hidden %>
+          <%= link_to(publish_admin_intro_path(intro), :method => :post, class: "btn btn-md btn-default show-btn") do %>
+            <span class="fa fa-eye"></span>
+          <% end %>
+        <% else %>
+          <%= link_to(hide_admin_intro_path(intro), :method => :post, data: { confirm: "确定隐藏该广告？" }, class: "btn btn-md btn-default") do %>
+            <span class="fa fa-eye-slash"></span>
+          <% end %>
+        <% end %>
+      </td>
+    </tr>
+  <% end %>
+</table>

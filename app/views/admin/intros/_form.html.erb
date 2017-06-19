@@ -1,0 +1,19 @@
+<div class="col-md-8 col-md-offset-2 admin-data-box">
+  <hr style="size:2px" />
+  <%= simple_form_for [:admin, @intro] do |f| %>
+    <%= f.input :title, :label => t('f-intro-title'), input_html: { class: 'width-50' } %>
+    <%= f.input :content, :label => t('f-intro-content'), input_html: { class: 'width-75' } %>
+    <%= f.input :link, :label => t('f-intro-link') %>
+    <!-- 上传图片 -->
+    <% if @intro.image.present? %>
+      <%= image_tag(@intro.image.url, :class => "width-100") %>
+    <% end %>
+    <%= f.label t('f-intro-image') %><br>
+    <%= f.file_field :image %>
+    <!-- 广告隐藏与否 -->
+    <span class="hidden-box"><%= f.input :is_hidden, :label => t('f-hide') %></span>
+    <div class="form-actions">
+      <%= f.submit t('f-submit'), class: 'btn btn-md btn-default' %>
+    </div>
+  <% end %>
+</div>
