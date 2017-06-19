@@ -17,6 +17,7 @@ class Admin::ProductsController < ApplicationController
     # 商品所属的品牌/细分品类
     @brands = Brand.all
     @categories = Category.all.order("category_group_id, name")
+    @colors = Color.all
   end
 
   def create
@@ -91,6 +92,6 @@ class Admin::ProductsController < ApplicationController
   private
 
   def product_params
-    params.require(:product).permit(:title, :description, :quantity, :price, :image, :category_id, :brand_id, :is_hidden)
+    params.require(:product).permit(:name, :description, :price, :quantity, :category_id, :brand_id, :size, :material, :country, :is_hidden, :is_chosen, color_ids: [])
   end
 end

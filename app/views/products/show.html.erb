@@ -40,6 +40,8 @@
           <hr />
           <div>
             <p><%= t('product-brand') %>：<%= link_to(@product.brand.name, products_path(:brand => @product.brand.name)) %></p>
+            <!-- 商品规格：颜色 -->
+            <%= render 'products/specification' %>
             <br/>
             <p>
               <!-- 如果库存大于零 -->

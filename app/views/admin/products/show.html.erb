@@ -33,6 +33,15 @@
   <h3><%= t('f-product-brand') %></h3>
   <p><%= @product.brand.name %></p>
 
+  <!-- 商品颜色 -->
+  <div class='admin-color-circle'>
+    <% if @product.colors.present? %>
+      <% @product.colors. each do |color|%>
+          <button style='background-color:<%= color.code %>'></button>
+      <% end %>
+    <% end %>
+  </div>
+
   <!-- 商品价格 -->
   <h3><%= t('f-product-price') %></h3>
   <p><%= @product.price %></p>
