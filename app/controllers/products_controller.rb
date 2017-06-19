@@ -6,23 +6,27 @@ class ProductsController < ApplicationController
     @category_groups = CategoryGroup.published
     @brands = Brand.published
 
-    # 判斷是否筛选细分品类
+    # 是否筛选细分品类
     if params[:category].present?
       @category_s = params[:category]
       @category = Category.find_by(name: @category_s)
       @products = Product.where(:category => @category.id).published.recent.paginate(:page => params[:page], :per_page => 12)
 
-    # 判斷是否筛选大类
+    # 是否筛选大类
     elsif params[:group].present?
       @group_s = params[:group]
       @group = CategoryGroup.find_by(name: @group_s)
       @products = Product.joins(:category).where("categories.category_group_id" => @group.id).published.recent.paginate(:page => params[:page], :per_page => 12)
 
-    # 判斷是否筛选品牌
+    # 是否筛选品牌
     elsif params[:brand].present?
       @brand_s = params[:brand]
       @brand = Brand.find_by(name: @brand_s)
       @products = Product.where(:brand => @brand.id).published.recent.paginate(:page => params[:page], :per_page => 12)
+
+    # 是否选择精选商品
+    elsif params[:chosen].present?
+      @products = Product.where(:is_chosen => true).published.recent.paginate(:page => params[:page], :per_page => 12)      
 
     # 默认显示所有公开发布的商品
     else

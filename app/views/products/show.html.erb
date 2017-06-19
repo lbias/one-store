@@ -1,5 +1,9 @@
 <div class='product-box product-show'>
   <div class='container'>
+    <!-- 商品品类，品牌选单 -->
+    <%= image_tag(@product.category.category_group.image, class: 'background-image') %>
+    <%= render "products/menu" %>
+
     <!-- 如果商品是上架状态 -->
     <% if !@product.hidden?  %>
       <!-- 商品图片 -->
@@ -8,6 +12,9 @@
           <% if @product_images.present? %>
           <!-- 显示第一张商品图片 main 尺寸大图 -->
           <div class='col-md-12'>
+            <% if @product.is_chosen %>
+              <div class="chosen-box location"><%= t('product-chosen') %></div>
+            <% end %>
             <%= image_tag(@product_images.first.image.main.url, class: 'main-image thumbnail') %>
           </div>
             <% @product_images.each_with_index do |p| %>
@@ -40,7 +47,7 @@
           <hr />
           <div>
             <p><%= t('product-brand') %>：<%= link_to(@product.brand.name, products_path(:brand => @product.brand.name)) %></p>
-            <!-- 商品规格：颜色 -->
+            <!-- 商品规格：颜色，尺寸，材料，产地 -->
             <%= render 'products/specification' %>
             <br/>
             <p>
@@ -68,8 +75,8 @@
 
           </div>
           <hr />
+          <!-- 愿望清单 -->
           <div class='row'>
-            <!-- 愿望清單 -->
             <div class='left-box wish'>
               <% if current_user && current_user.is_wish_list_owner_of?(@product) %>
                 <%= link_to remove_from_wish_list_product_path(@product), method: :post do %>

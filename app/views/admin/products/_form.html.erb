@@ -30,14 +30,20 @@
     <!-- 商品描述 -->
     <%= f.input :description, :label => t('f-product-description'), input_html: { class: 'height-200' } %>
 
-    <!-- 商品颜色 -->
-    <%= collection_check_boxes(:product, :color_ids, Color.all, :id, :name) %><br/><br/>    
+    <!-- 商品颜色，尺寸，材料，产地 -->
+    <%= f.input :size, :label => t('f-product-size'), input_html: { class: 'width-25' } %>
+    <%= f.input :material, :label => t('f-product-material'), input_html: { class: 'width-25' } %>
+    <%= f.input :country, as: :string, :label => t('f-product-country'), input_html: { class: 'width-25' } %>
+    <%= collection_check_boxes(:product, :color_ids, Color.all, :id, :name) %><br/><br/>
 
     <!-- 商品价格 -->
     <%= f.input :price, :label => t('f-product-price'), input_html: { class: 'width-25' } %>
 
     <!-- 商品数量 -->
     <%= f.input :quantity, :label => t('f-product-quantity'), input_html: { class: 'width-25' } %>
+
+    <!-- 是否为精选商品 -->
+    <span class="hidden-box"><%= f.input :is_chosen, :label => t('f-product-chosen') %></span>
 
     <!-- 商品是否隐藏 -->
     <span class="hidden-box"><%= f.input :is_hidden, :label => t('f-hide') %></span>
