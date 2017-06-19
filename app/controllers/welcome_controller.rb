@@ -1,5 +1,7 @@
 class WelcomeController < ApplicationController
+  layout "welcome"
+
   def index
-    flash[:notice] = "Good morning！"
+    @intros = Intro.published
   end
 end
