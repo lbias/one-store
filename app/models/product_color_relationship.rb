@@ -1,0 +1,2 @@
+class ProductColorRelationship < ApplicationRecord
+end
