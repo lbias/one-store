@@ -119,6 +119,13 @@ zh-CN:
   f-product-quantity: 库存数量
   f-product-description: 商品描述
   f-product-price: 商品价格
+  f-product-color: 商品颜色
+  f-specification: 商品规格
+  f-product-size: 商品尺寸
+  f-product-material: 商品材料
+  f-product-country: 商品产地
+  f-product-chosen: 精选商品
+  f-product-images: 商品图片
 
   # 提示信息
   message-add-to-cart-success: 成功加入购物车！
@@ -136,7 +143,7 @@ zh-CN:
   btn-add-to-cart-none: 商品缺货
   btn-continue: 继续购物
   nav-currency: 切换币值
-  wish-list-add: 加入收藏  
+  wish-list-add: 加入收藏
   wish-list-remove: 已收藏至愿望清单
   best-matches: J & Z SELECT 推荐商品
   product-size: 尺寸
