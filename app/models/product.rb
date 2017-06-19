@@ -39,6 +39,17 @@ class Product < ApplicationRecord
     "#{self.id}-#{self.name.gsub(/\s+/, "")}"
   end
 
+  # 精选商品
+  def chosen!
+    self.is_chosen = true
+    self.save
+  end
+
+  def no_chosen!
+    self.is_chosen = false
+    self.save
+  end
+
   # Scope
   scope :published, -> { where(is_hidden: false) }
   scope :recent, -> { order('created_at DESC') }
