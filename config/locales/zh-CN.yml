@@ -202,3 +202,12 @@ zh-CN:
   admin-brand: 品牌管理
   admin-category: 品类管理
   admin-homepage: 首页广告管理
+
+  # 提示信息
+  message-add-to-cart-success: 成功加入购物车！
+  message-already-added: 您的购物车已有此商品。
+  message-confirm-clear-cart: 您确定要清空整个购物车吗？
+  message-clear-cart-success: 已清空购物车。
+  message-payment-success: 已完成付款。
+  message-cancel-request-sent: 已提交申请，J & Z SELECT 会尽速与您联系。
+  message-payment-failed: 付款失败。

@@ -201,4 +201,13 @@ en:
   admin-product: Products
   admin-brand: Brands
   admin-category: Categories
-  admin-homepage: Homepage Banner    
+  admin-homepage: Homepage Banner
+
+  # 提示信息
+  message-add-to-cart-success: Added to cart.
+  message-already-added: Already added.
+  message-confirm-clear-cart: Are you sure to clear the cart?
+  message-clear-cart-success: The cart is cleared.
+  message-payment-success: Payment completed.
+  message-cancel-request-sent: Cancel request is sent, J & Z will contact you soon.
+  message-payment-failed: Payment isn't successful. 
