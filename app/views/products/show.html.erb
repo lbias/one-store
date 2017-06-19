@@ -66,7 +66,23 @@
 
           </div>
           <hr />
-
+          <div class='row'>
+            <!-- 愿望清單 -->
+            <div class='left-box wish'>
+              <% if current_user && current_user.is_wish_list_owner_of?(@product) %>
+                <%= link_to remove_from_wish_list_product_path(@product), method: :post do %>
+                  <i class='fa fa-check fa-fw'> </i><%= t('wish-list-remove') %>
+                <% end %>
+              <% else %>
+                <%= link_to add_to_wish_list_product_path(@product), method: :post do %>
+                  <i class='fa fa-plus fa-fw'> </i><%= t('wish-list-add') %>
+                <% end %>
+              <% end %>
+            </div>
+            <div class='right-box share'>
+              <%= social_share_button_tag(@product.name, :allow_sites => %w(facebook twitter google_plus wechat weibo), :image => @product_images.first.image.main.url , desc: @product.description, via: 'J&A SELECT - '+@product.name, 'data-twitter-title' => 'J&A SELECT - '+@product.name) %>
+            </div>
+          </div>
           <!-- 如果库存大于零 -->
           <% if @orderSum < @product.quantity && @product.quantity > 0 %>
             <!-- 加入购物车 -->
