@@ -127,6 +127,9 @@ zh-CN:
   f-product-chosen: 精选商品
   f-product-images: 商品图片
 
+  # 商品管理（搜索） 
+  search-no-data: 没有符合搜索条件的商品！
+
   # 提示信息
   message-add-to-cart-success: 成功加入购物车！
   message-already-added: 您的购物车已有此商品。
