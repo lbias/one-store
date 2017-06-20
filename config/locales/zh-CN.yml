@@ -217,6 +217,13 @@ zh-CN:
   shipping-address: 收件地址
   btn-order-create: 确认下单
 
+  # 订单 
+  order-show: 订单明细
+  btn-pay: 前往结账
+  btn-apply-to-cancel: 申请取消订单
+  order-payment-method: 线上支付
+  order-paid: < 此笔订单已完成结账，感谢您的购买。 >
+
   # 品牌广告管理
   intro-index: 广告一览
   intro-new: 新增广告
