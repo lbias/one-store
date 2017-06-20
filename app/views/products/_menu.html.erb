@@ -48,7 +48,7 @@
   <!-- 产品页面路径 -->
   <div class="left-box">
     <%= link_to products_path do %>
-      <%= (t('j-and-a-select')) %>
+      <%= (t('j-and-z-select')) %>
     <% end %>
 
     <% if params[:id].present? %>
@@ -64,30 +64,29 @@
     <% end %>
   </div>
 
-  <!-- 只在 Products#index 和 products/search 两个页面显示 -->
-  <% if current_page?(products_url) || current_page?('/products/search') %>
-  排序选单
-  <div class="right-box">
-    <div class="dropdown btn-group clearfix">
-      <% if params[:order].present? %>
-        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuDivider" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-          <%= params[:order] %> <span class="caret"></span>
-        </button>
-      <% else %>
-        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuDivider" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-          <%= t('order-btn-title') %> <span class="caret"></span>
-        </button>
-      <% end %>
+  <!-- 只在 Products#index 和 products#search 两个页面显示 -->
+  <% if current_page?(products_url) || current_page?('/products#search') %>
+    <!-- 排序选单 -->
+    <div class="right-box">
+      <div class="dropdown btn-group clearfix">
+        <% if params[:order].present? %>
+          <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuDivider" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <%= params[:order] %> <span class="caret"></span>
+          </button>
+        <% else %>
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuDivider" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <%= t('order-btn-title') %> <span class="caret"></span>
+          </button>
+        <% end %>
 
-      <!-- 列出排序方式 -->
-      <ul class="dropdown-menu dropdown-menu-right" selection aria-labelledby="dropdownMenuDivider">
-        <li><%= link_to(t('order-btn-hot'), '#') %></li>
-        <li><%= link_to(t('order-btn-recent'), '#') %></li>
-        <li><%= link_to(t('order-btn-price-l'), '#') %></li>
-        <li><%= link_to(t('order-btn-price-h'), '#') %></li>
-      </ul>
+        <!-- 列出排序方式 -->
+        <ul class="dropdown-menu dropdown-menu-right" selection aria-labelledby="dropdownMenuDivider">
+          <li><%= link_to(t('order-btn-hot'), '#') %></li>
+          <li><%= link_to(t('order-btn-recent'), '#') %></li>
+          <li><%= link_to(t('order-btn-price-l'), '#') %></li>
+          <li><%= link_to(t('order-btn-price-h'), '#') %></li>
+        </ul>
+      </div>
     </div>
-  </div>
   <% end %>
 </div>
-<hr/>
