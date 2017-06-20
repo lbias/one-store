@@ -69,6 +69,7 @@ Rails.application.routes.draw do
     member do
       post :pay_with_alipay
       post :pay_with_wechat
+      post :pay_with_paypal # 使用 PayPal 付款
       post :apply_to_cancel
     end
   end

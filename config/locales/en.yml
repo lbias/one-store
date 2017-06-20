@@ -128,7 +128,7 @@ en:
   f-product-images: Product Images
 
   # 商品管理（搜索）
-  search-no-data: No product meeting the search criteria!    
+  search-no-data: No product meeting the search criteria!
 
   # 提示信息
   message-add-to-cart-success: You added a product to cart!
@@ -215,6 +215,13 @@ en:
   shipping-phone: Shipping Phone No.
   shipping-address: Shipping Address
   btn-order-create: Confirm Order
+
+  # 订单
+  order-show: Order Details
+  btn-pay: Go to Payment
+  btn-apply-to-cancel: Apply to Cancel
+  order-payment-method: Payment Method
+  order-paid: < Payment completed, thank you. >    
 
   # 品牌广告管理
   intro-index: Intro List

@@ -95,5 +95,9 @@ Rails.application.configure do
     user_name: ENV["SEND_CLOUD_USER_NAME"],
     password: ENV["SEND_CLOUD_USER_KEY"]
     }
-
+  # Braintree
+  Braintree::Configuration.environment = :sandbox
+  Braintree::Configuration.merchant_id = "z22jzp9tbxzkkv9f"
+  Braintree::Configuration.public_key = "58fhbv3ktqb2y3sf"
+  Braintree::Configuration.private_key = "2006676ce020cc0e3025cfa525e8f8c5"
 end

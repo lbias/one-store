@@ -127,7 +127,7 @@ zh-CN:
   f-product-chosen: 精选商品
   f-product-images: 商品图片
 
-  # 商品管理（搜索） 
+  # 商品管理（搜索）
   search-no-data: 没有符合搜索条件的商品！
 
   # 提示信息
@@ -177,7 +177,7 @@ zh-CN:
   f-cart-shipping-fee: 运费
   f-cart-free-shipping: 免运费
   f-cart-total: 合计：
-  btn-checkout: 前往结帐
+  btn-checkout: 前往结账
   cart-notice: 提醒您：请于订单确认后一小时内完成付款手续。
   cart-no-data: 您尚未加入任何商品。
   cart-suggest: J & Z SELECT 诚挚向您推荐：
@@ -203,7 +203,7 @@ zh-CN:
   checkout-index: 订单详情
   f-billing-info: 付款信息
   f-billing-name: 付款人 - 姓名
-  f-billing-address: 付款人 - 帐单地址
+  f-billing-address: 付款人 - 账单地址
   f-shipping-info: 寄送信息
   f-shipping-name: 收件人 - 姓名
   f-shipping-phone: 收件人 - 电话（选填）
@@ -216,6 +216,13 @@ zh-CN:
   shipping-phone: 联系电话
   shipping-address: 收件地址
   btn-order-create: 确认下单
+
+  # 订单 
+  order-show: 订单明细
+  btn-pay: 前往结账
+  btn-apply-to-cancel: 申请取消订单
+  order-payment-method: 线上支付
+  order-paid: < 此笔订单已完成结账，感谢您的购买。 >
 
   # 品牌广告管理
   intro-index: 广告一览

@@ -13,6 +13,9 @@ class Order < ApplicationRecord
     self.token = SecureRandom.uuid
   end
 
+  PAYMENT_METHOD = ['VISA/Master', 'PayPal', 'Other']
+  validates_inclusion_of :payment_method, :in => PAYMENT_METHOD
+
   def set_payment_with!(method)
     self.update_columns(payment_method: method )
   end
