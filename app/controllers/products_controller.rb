@@ -26,7 +26,7 @@ class ProductsController < ApplicationController
 
     # 是否选择精选商品
     elsif params[:chosen].present?
-      @products = Product.where(:is_chosen => true).published.recent.paginate(:page => params[:page], :per_page => 12)      
+      @products = Product.where(:is_chosen => true).published.recent.paginate(:page => params[:page], :per_page => 12)
 
     # 默认显示所有公开发布的商品
     else
@@ -84,4 +84,28 @@ class ProductsController < ApplicationController
     end
     redirect_to :back
   end
+
+  def search
+    if @query_string.present?
+      # 显示符合条件的商品
+      search_result = Product.joins(:brand).ransack(@search_criteria).result(:distinct => true)
+      @products = search_result.published.recent.paginate(:page => params[:page], :per_page => 12 )
+    end
+
+    @category_groups = CategoryGroup.published
+    @brands = Brand.published
+  end
+
+  protected
+
+    def validate_search_key
+      # 去除特殊字符
+      @query_string = params[:keyword].gsub(/\\|\'|\/|\?/, "") if params[:keyword].present?
+      @search_criteria = search_criteria(@query_string)
+    end
+
+    def search_criteria(query_string)
+      # 筛选多个栏位
+      { :name_or_description_or_brand_name_cont => query_string }
+    end
 end
