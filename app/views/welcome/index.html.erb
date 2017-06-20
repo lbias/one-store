@@ -1,1 +1,155 @@
-<h1> Welcome to J & Z SELECT! </h1>
+<div class="welcome-box">
+  <!-- 广告轮播 -->
+  <section class="intro-box">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="intro" class="carousel slide" data-ride="carousel">
+
+          <!-- 轮播内容 -->
+          <div class="carousel-inner" role="listbox">
+            <% @intros.each_with_index do |intro,index| %>
+              <% if index == 0 %>
+                <div class="item active">
+              <% else %>
+                <div class="item">
+              <% end %>
+                <%= link_to intro.link, target: "_blank" do %>
+                  <%= image_tag(intro.image) %>
+                  <div class="carousel-caption">
+                    <h3><%= intro.title %></h3>
+                    <p><%= intro.content %></p>
+                  </div>
+                <% end %>
+              </div>
+            <% end %>
+          </div>
+
+          <!-- 换页按钮 -->
+          <a class="left carousel-control" href="#intro" role="button" data-slide="prev">
+            <span class="fa fa-angle-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#intro" role="button" data-slide="next">
+            <span class="fa fa-angle-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 商品品类 -->
+  <section class="categories-box">
+    <div class="row">
+      <div class="col-md-4 category-content">
+        <%= link_to 'https://j-and-z-select.herokuapp.com/products?group=%E6%97%A5%E5%B8%B8%E6%96%87%E5%85%B7' , class: "category_1" do %>
+          <div class="category-box">
+            <%= image_tag("category_1.jpg") %>
+          </div>
+          <div>
+            <h3><%= t('th-desk') %></h3>
+            <p><%= t('slogan-desk') %></p>
+          </div>
+        <% end %>
+      </div>
+      <div class="col-md-4 category-content">
+        <%= link_to 'https://j-and-z-select.herokuapp.com/products?group=%E7%94%9F%E6%B4%BB%E5%99%A8%E7%89%A9' , class: "category_2" do %>
+          <div class="category-box">
+            <%= image_tag("category_2.jpg") %>
+          </div>
+          <div>
+            <h3><%= t('th-home') %></h3>
+            <p><%= t('slogan-home') %></p>
+          </div>
+        <% end %>
+      </div>
+      <div class="col-md-4 category-content">
+        <%= link_to 'https://j-and-z-select.herokuapp.com/products?group=%E5%80%8B%E4%BA%BA%E5%96%AE%E5%93%81' , class: "category_3" do %>
+          <div class="category-box">
+            <%= image_tag("category_3.jpg") %>
+          </div>
+          <div>
+            <h3><%= t('th-accessories') %></h3>
+            <p><%= t('slogan-accessories') %></p>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </section>
+
+  <!-- 推荐商品 -->
+  <section class="show-box">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <h2><%= t('th-featured-products') %></h2>
+        <div class="short-line"></div>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="box">
+              <%= link_to '#' do %><%= image_tag("item_1.jpg") %><% end %>
+            </div>
+            <div class="box">
+              <%= link_to '#' do %><%= image_tag("item_2.jpg") %><% end %>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="box">
+              <%= link_to '#' do %><%= image_tag("item_3.jpg") %><% end %>
+            </div>
+            <div class="box">
+              <%= link_to '#' do %><%= image_tag("item_4.jpg") %><% end %>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="box three">
+              <%= link_to '#' do %><%= image_tag("item_5.jpg") %><% end %>
+            </div>
+            <div class="box three">
+              <%= link_to '#' do %><%= image_tag("item_6.jpg") %><% end %>
+            </div>
+            <div class="box three">
+              <%= link_to '#' do %><%= image_tag("item_7.jpg") %><% end %>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="box">
+              <%= link_to '#' do %><%= image_tag("item_8.jpg") %><% end %>
+            </div>
+            <div class="box">
+              <%= link_to '#' do %><%= image_tag("item_9.jpg") %><% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 合作品牌 -->
+  <section class="brand-box">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <h2><%= t('th-brands') %></h2>
+        <div class="short-line"></div>
+        <%= image_tag("brand_1.png") %>
+        <%= image_tag("brand_2.png") %>
+        <%= image_tag("brand_3.png") %>
+        <%= image_tag("brand_4.png") %>
+        <%= image_tag("brand_5.png") %>
+        <%= image_tag("brand_6.png") %>
+        <%= image_tag("brand_7.png") %>
+        <%= image_tag("brand_8.png") %>
+        <%= image_tag("brand_9.png") %>
+      </div>
+    </div>
+  </section>
+
+  <!-- 立即购买 -->
+  <section class="push-box">
+    <%= link_to(t('btn-buy-now'), products_path, class:'btn btn-push' ) %>
+  </section>
+
+  <!-- 回到顶端 -->
+  <div class="goTop">
+    <span class="fa fa-chevron-up"></span>
+  </div>
+</div>
