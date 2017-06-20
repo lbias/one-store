@@ -17,6 +17,7 @@
 //= require social-share-button/wechat
 //= require bootstrap/alert
 //= require bootstrap/dropdown
+//= require masonry/jquery.masonry
 //= require_tree .
 
 
