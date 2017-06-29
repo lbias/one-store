@@ -8,5 +8,5 @@
 <!-- 该细分品类下商品一览 -->
 <h3><%= t('f-category-products') %></h3>
 <% @category.products.each do |product| %>
-  <li><%= link_to(product.name, admin_product_path(product)) %></li>
+  <li><%= link_to(product.title, admin_product_path(product)) %></li>
 <% end %>

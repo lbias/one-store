@@ -89,7 +89,7 @@
               <% end %>
             </div>
             <div class='right-box share'>
-              <%= social_share_button_tag(@product.name, :allow_sites => %w(facebook twitter google_plus wechat weibo), :image => @product_images.first.image.main.url , desc: @product.description, via: 'J&A SELECT - '+@product.name, 'data-twitter-title' => 'J&A SELECT - '+@product.name) %>
+              <%= social_share_button_tag(@product.title, :allow_sites => %w(facebook twitter google_plus wechat weibo), :image => @product_images.first.image.main.url , desc: @product.description, via: 'J&Z SELECT - '+@product.title, 'data-twitter-title' => 'J&Z SELECT - '+@product.title) %>
             </div>
           </div>
           <!-- 如果库存大于零 -->

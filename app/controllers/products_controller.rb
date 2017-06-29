@@ -39,7 +39,8 @@ class ProductsController < ApplicationController
     @product_images = @product.product_images.all
     @orderSum = OrderItem.where("product_id" => @product.id).sum(:quantity)
     @product_stock = @product.quantity - @orderSum
-
+    # 随机推荐 3 种商品
+    @suggests = Product.published.random3    
     # 大类 / 品牌
     @category_groups = CategoryGroup.published.recent.paginate(:page => params[:page], :per_page => 12)
     @brands = Brand.published

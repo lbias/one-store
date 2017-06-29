@@ -24,7 +24,7 @@
                     <%= image_tag('http://placehold.it/100x100&text=No Pic') %>
                   <% end %>
                 <% end %>
-                <div class="name"><%= link_to(product.name, product_path(product)) %></div>
+                <div class="name"><%= link_to(product.title, product_path(product)) %></div>
                 <div class="price"><%= render_product_price(product) %></div>
                 <!-- 添加到购物车 -->
                 <div>
