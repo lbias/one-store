@@ -33,6 +33,15 @@ en:
   dv-set-pwd: Set 6 ~ 16 characters.
   dv-confirm-pwd: Confirm Password.
 
+  # 提示消息
+  message-add-to-cart-success: Add the product to cart successfully！
+  message-already-added: This product has been added to cart.
+  message-confirm-clear-cart: Are you sure to clear the cart?
+  message-clear-cart-success: You have cleared the card successfully.
+  message-payment-success: Payment completed.
+  message-cancel-request-sent: The cancel request has been sent.
+  message-payment-failed: The payment failed.
+
   # 账号相关
   user-sign-up: Sign Up
   user-log-in: Log In
@@ -78,6 +87,8 @@ en:
   notice-no-image: No Image
   btn-publish: Publish
   btn-hide: Hide
+  btn-edit: Edit
+  btn-delete: Delete
 
   # 品牌管理
   brand-index: Brand Index
@@ -89,7 +100,7 @@ en:
   f-brand-products: Brand Products
   btn-brand-new: New Brand
 
-  # 大类管理 #
+  # 大类管理
   category-group-index: Category Group Index
   category-group-new: New Category Group
   category-group-edit: Edit Category Group
@@ -99,7 +110,7 @@ en:
   f-category-group-categories: Categories
   btn-category-group-new: New Category Group
 
-  # 细分品类管理 #
+  # 细分品类管理
   category-index: Category Index
   f-category-name: Category Name
   btn-category-new: New Category
@@ -221,7 +232,7 @@ en:
   btn-pay: Go to Payment
   btn-apply-to-cancel: Apply to Cancel
   order-payment-method: Payment Method
-  order-paid: < Payment completed, thank you. >    
+  order-paid: < Payment completed, thank you. >
 
   # 品牌广告管理
   intro-index: Intro List
@@ -253,3 +264,65 @@ en:
   account-wish-list-index: Wish List
   btn-move-to-cart: Add to cart
   wish-no-data: No item in wish list.
+  wish-suggest: J & Z SELECT Recommend For You：
+
+# 首页
+  # 商品大类
+  th-desk: Stationary
+  slogan-desk:
+    The close relationship between the stationary and life is truly beyond our imagination. Pens, rulers, scissors, paper products, stickers, clips,painings and more, play an important role in one's reals life. J & Z SELECT pays attention to the tiny beautiful of life, concentrate on selection of products from Europe and the United States, Japan, Southeast Asia and other places of skincare, stationery to change your table view.
+
+  th-home: Commodity
+  slogan-home:
+    The texture of life is nothing more than a large and small life props used in daily life. Life props are the main characters in life. All the staff of J & Z SELECT, dedicate to promote the "good life" as the center, thinking of everyday life, strict selection of simple and reliable everyday objects for artifacts and life to find the taste of the people, making a chance encounter.
+  th-accessories: Personal Accessories
+  slogan-accessories:
+    Personal Accessories is reflecting one's attitue of life. Any Amount of outstanding items can accompany us for a long time and bring us satisfaction and self confidence. If you also agree with "simple yet extraordinary" concept, or if you want to show an elegant temperament, the high quality products from J & Z will let you fondle admiringly for certain. 
+
+  # 推荐商品
+  th-featured-products: Featured Products
+
+  # 合作品牌
+  th-brands: Featured Brands
+
+  # 立即购买
+  btn-buy-now: Buy Now
+
+# Footer
+
+  # 商品信息
+  th-products: Products
+  link-latest: Latest Products
+  link-exclusive: Featured Products
+  link-brands: Featured Brands
+
+  # 购物须知
+  th-service-info: Buyer Reading
+  link-shipping: About Shipping
+  link-return: About Return
+  link-faq: FAQ
+
+  # 关于我们 #
+  th-about-us: About Us
+  link-story: Brand Stories
+  link-media: Media Reports
+  link-contact: Contact Us
+
+# 管理员订单管理
+  order-index: Order List
+  f-order-user: User Name
+  f-order-status: Order Status
+  f-order-action: Order Actions
+  f-order-status-shipping: Shipped
+  f-order-status-shipped: Delivered
+  f-order-status-cancelled: Cancelled
+  f-order-status-returned: Returned
+  order-state-paid: Paid
+  order-state-unpaid: Non-payment
+  btn-cancel-order: Cancel
+  btn-set-cancel: Cancel
+  btn-set-shipping: Shipped
+  btn-set-shipped: Delivered
+  btn-set-return: Return
+  cancelled: The order has been cancelled.
+  returned: The products have been returned.
