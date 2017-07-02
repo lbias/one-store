@@ -36,7 +36,7 @@ class Product < ApplicationRecord
   end
 
   def to_param
-    "#{self.id}-#{self.name.gsub(/\s+/, "")}"
+    "#{self.id}-#{self.title.gsub(/\s+/, "")}"
   end
 
   # 精选商品
@@ -53,5 +53,5 @@ class Product < ApplicationRecord
   # Scope
   scope :published, -> { where(is_hidden: false) }
   scope :recent, -> { order('created_at DESC') }
-  scope :random3, -> { limit(3).order('RANDOM()') }  
+  scope :random3, -> { limit(3).order('RANDOM()') }
 end

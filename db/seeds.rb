@@ -11,7 +11,7 @@ if User.find_by(email: 'admin@test.com').nil?
   u = User.new
   u.name = '测试管理员'
   u.email = 'admin@test.com'
-  u.nickname = '测试管理员'
+  u.nickname = 'Sam Admin'
   u.password = '11111111'
   u.password_confirmation = '11111111'
   u.is_admin = true
@@ -26,7 +26,7 @@ if User.find_by(email: 'user@test.com').nil?
   u = User.new
   u.name = '测试用户'
   u.email = 'user@test.com'
-  u.nickname = '测试用户'
+  u.nickname = 'Sam User'
   u.password = '11111111'
   u.password_confirmation = '11111111'
   u.is_admin = false
@@ -242,7 +242,7 @@ end
   description: 'Merchant & Mills 创办于 2010 年，旨在激励人们对原始手工缝制的热爱。他们拥有专业的时尚嗅觉，坚持用高品质的面料手工缝纫服装。「手工缝制重新回归了人们的视线，现在有关手工制作的所有事情都即将引发新的潮流。」。'
   )
 
-  puts '创建品牌*6'
+  puts '创建品牌*7'
 
 # 新增商品  Product #
 
@@ -289,7 +289,7 @@ end
    price: 45,
    quantity: 10,
    category_id: 4,
-   brand_id: 1,
+   brand_id: 2,
    is_hidden: false
  )
 
@@ -301,7 +301,7 @@ end
    price: 450,
    quantity: 15,
    category_id: 9,
-   brand_id: 1,
+   brand_id: 2,
    is_hidden: false
  )
 
@@ -315,7 +315,7 @@ end
    price: 450,
    quantity: 8,
    category_id: 9,
-   brand_id: 1,
+   brand_id: 2,
    is_hidden: false
  )
 
@@ -327,7 +327,7 @@ end
    price: 300,
    quantity: 20,
    category_id: 9,
-   brand_id: 1,
+   brand_id: 3,
    is_hidden: false
  )
 
@@ -342,7 +342,7 @@ end
    price: 2500,
    quantity: 20,
    category_id: 1,
-   brand_id: 2,
+   brand_id: 3,
    is_hidden: false
  )
 
@@ -356,7 +356,7 @@ end
    price: 910,
    quantity: 1,
    category_id: 1,
-   brand_id: 2,
+   brand_id: 3,
    is_hidden: false
  )
 
@@ -368,12 +368,12 @@ end
    price: 3200,
    quantity: 2,
    category_id: 1,
-   brand_id: 2,
+   brand_id: 4,
    is_hidden: false
  )
 
  Product.create!(
-   title: 'Rhodia 筆記本 N°16 （点线）',
+   title: 'Rhodia 笔记本 N°16 （点线）',
    description: '
    来自法国，笔记本纸感滑顺，使用便利的贴心设计，纸质为无酸纸，适用各种笔款墨水书写。
 
@@ -382,7 +382,7 @@ end
    price: 200,
    quantity: 7,
    category_id: 3,
-   brand_id: 3,
+   brand_id: 4,
    is_hidden: false
  )
 
@@ -396,7 +396,7 @@ end
    price: 150,
    quantity: 4,
    category_id: 3,
-   brand_id: 3,
+   brand_id: 4,
    is_hidden: false
  )
 
@@ -408,7 +408,7 @@ end
    price: 2690,
    quantity: 5,
    category_id: 7,
-   brand_id: 7,
+   brand_id: 5,
    is_hidden: false
  )
 
@@ -470,7 +470,7 @@ end
    price: 400,
    quantity: 4,
    category_id: 6,
-   brand_id: 6,
+   brand_id: 7,
    is_hidden: false
  )
 
