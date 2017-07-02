@@ -26,12 +26,21 @@ zh-CN:
   dv-check-email: you@example.com
   dv-name: 用户名称
   dv-find-pwd: 取得密码
-  dv-account-signin: 已经是 J&Z SELECT 用户了吗？按此登入。
+  dv-account-signin: 已经是 J&Z SELECT 用户了吗？按此登录。
   dv-no-account-signup: 现在就加入 J&Z SELECT。
   dv-user: 用户
   dv-admin: 管理员
   dv-set-pwd: 设定 6 到 16 字位密码
   dv-confirm-pwd: 确认密码
+
+  # 提示消息
+  message-add-to-cart-success: 成功加入购物车！
+  message-already-added: 您的购物车已有此商品。
+  message-confirm-clear-cart: 您确定要清空整个购物车吗？
+  message-clear-cart-success: 已清空购物车。
+  message-payment-success: 已完成付款。
+  message-cancel-request-sent: 已提交申请，J&Z SELECT 会尽速与您联系。
+  message-payment-failed: 付款失败。
 
   # 账号相关
   user-sign-up: 账号注册
@@ -66,7 +75,7 @@ zh-CN:
   admin-access: 管理员后台
   account-order-access: 我的订单
   user-center: 个人信息
-  user-order: 订单管理
+  user-order: 我的订单
   language: 切换语言
   keywords: 搜索商品
 
@@ -78,6 +87,8 @@ zh-CN:
   notice-no-image: 尚无图片
   btn-publish: 发布
   btn-hide: 隐藏
+  btn-edit: 编辑
+  btn-delete: 删除
 
   # 品牌管理
   brand-index: 品牌一览
@@ -217,7 +228,7 @@ zh-CN:
   shipping-address: 收件地址
   btn-order-create: 确认下单
 
-  # 订单 
+  # 订单
   order-show: 订单明细
   btn-pay: 前往结账
   btn-apply-to-cancel: 申请取消订单
@@ -254,20 +265,66 @@ zh-CN:
   account-wish-list-index: 愿望清单
   btn-move-to-cart: 添加到购物车
   wish-no-data: 您尚未收藏任何商品。
+  wish-suggest: J & Z SELECT 诚挚向您推荐：
 
-  # Navbar #
-  signup: 注册
-  login: 登录
-  logout: 退出
-  greeting: 您好，
-  wish-list: 愿望清单
-  cart: 购物车
-  language: 语言
-  product-access: 精选商品
-  brand-access: 品牌故事
-  recommend-access: 热门推荐
-  admin-access: 管理员控制台
-  account-order-access: 我的订单
-  user-center: 我的信息
-  user-order: 我的订单
-  keywords: 搜索商品
+# 首页
+  # 商品大类
+  th-desk: 日常文具
+  slogan-desk:
+    文具用品与生活紧密的程度，其实超乎想像。笔具、尺规、刀剪、纸制品，写的、贴的、夹的、画的；看似不起眼的文房具，在实质生活中却占有一席之地。 J&Z SELECT 贯彻「讲究生活里细微的美好」的选物职人精神，为你搜罗来自欧美、日本、东南亚等地的梦幻逸品，用文具改变你的桌上风景。
+
+  th-home: 生活器物
+  slogan-home:
+    生活质感，无非由日常中所使用的大大小小生活道具构筑而成；生活道具，正是生活中的主角。 J&A SELECT 的两位选物职人，以「促进美好生活」为中心，思考着每天的生活，严选简朴、值得信赖的日常物件，帮器物与寻找生活品味的人，制造一个邂逅的机会。
+
+  th-accessories: 个人单品
+  slogan-accessories:
+    个人配件，是一种态度的展现。好东西不用多，几个设计出众、容易搭配的物品，便可以陪伴我们很久，带给我们满足、自信。如果你也认同「简单，却也很不简单」的穿搭理念、想为自己添上不娇不作的优雅气质，J&Z SELECT 诚挚挑选的高质感单品，必然会让你爱不释手。
+
+  # 推荐商品
+  th-featured-products: 精选商品
+
+  # 合作品牌
+  th-brands: 严选品牌
+
+  # 立即购买
+  btn-buy-now: 立即选购
+
+# Footer
+
+  # 商品信息
+  th-products: 商品信息
+  link-latest: 最新商品
+  link-exclusive: 独家推荐
+  link-brands: 品牌分类
+
+  # 购物须知
+  th-service-info: 购物须知
+  link-shipping: 关于配送
+  link-return: 退货方式
+  link-faq: 常见问题
+
+  # 关于我们 #
+  th-about-us: 关于我们
+  link-story: 品牌故事
+  link-media: 媒体报导
+  link-contact: 联系我们
+
+# 管理员订单管理
+  order-index: 订单一览
+  f-order-user: 订购人
+  f-order-status: 订单状态
+  f-order-action: 订单操作
+  f-order-status-shipping: 订单派送
+  f-order-status-shipped: 商品送达
+  f-order-status-cancelled: 订单取消
+  f-order-status-returned: 商品退货
+  order-state-paid: 已付款
+  order-state-unpaid: 未付款
+  btn-cancel-order: 取消订单
+  btn-set-cancel: 取消订单
+  btn-set-shipping: 出货
+  btn-set-shipped: 设为「已出货」
+  btn-set-return: 退货
+  cancelled: 此笔订单已取消
+  returned: 此笔购买已退货

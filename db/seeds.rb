@@ -11,7 +11,7 @@ if User.find_by(email: 'admin@test.com').nil?
   u = User.new
   u.name = '测试管理员'
   u.email = 'admin@test.com'
-  u.nickname = '测试管理员'
+  u.nickname = 'Sam Admin'
   u.password = '11111111'
   u.password_confirmation = '11111111'
   u.is_admin = true
@@ -26,7 +26,7 @@ if User.find_by(email: 'user@test.com').nil?
   u = User.new
   u.name = '测试用户'
   u.email = 'user@test.com'
-  u.nickname = '测试用户'
+  u.nickname = 'Sam User'
   u.password = '11111111'
   u.password_confirmation = '11111111'
   u.is_admin = false
@@ -242,14 +242,12 @@ end
   description: 'Merchant & Mills 创办于 2010 年，旨在激励人们对原始手工缝制的热爱。他们拥有专业的时尚嗅觉，坚持用高品质的面料手工缝纫服装。「手工缝制重新回归了人们的视线，现在有关手工制作的所有事情都即将引发新的潮流。」。'
   )
 
-
-  puts '創建品牌*6'
-
+  puts '创建品牌*7'
 
 # 新增商品  Product #
 
  Product.create!(
-   name: 'Tools to Liveby 手工皮革笔袋（大）',
+   title: 'Tools to Liveby 手工皮革笔袋（大）',
    description: '天然植鞣皮革，会随着时间与使用而逐渐产生色泽变化，随着不同的使用者或是使用方式，会呈现不一样的质感，这就是植鞣牛皮的迷人之处。',
    price: 2500,
    quantity: 3,
@@ -259,7 +257,7 @@ end
  )
 
  Product.create!(
-   name: 'Tools to Liveby X Vita Yang 明信片組',
+   title: 'Tools to Liveby X Vita Yang 明信片組',
    description: '
    Vita Yang，知名时尚插画家。作品常见于 Harvey Nichols、HUMAN MADE、agnès b 等知名品牌，并长期与巴西 Vogue 杂志合作。
 
@@ -272,7 +270,7 @@ end
  )
 
  Product.create!(
-   name: 'Tools to Liveby  圆把剪刀（黑）',
+   title: 'Tools to Liveby  圆把剪刀（黑）',
    description: '
    使用日本不锈钢制造， 比例及造型都是最好的首选。自制的贴心小包装，能保护刀刃，也以雷射雕刻了礼拜的 logo ，更适合当作礼物送给朋友。 同样有雾黑与金色两款，黑色款外层涂布一层铁氟龙，裁剪胶带时较不容易残留胶。附纸套包装。
    ',
@@ -284,31 +282,31 @@ end
  )
 
  Product.create!(
-   name: 'Tools to Liveby 复古拆信刀',
+   title: 'Tools to Liveby 复古拆信刀',
    description: '
    现在比较少人有使用拆信刀的习惯，但是建议大家不妨从这款平价的入门试试看，让自己的步调放慢下来，去感受工具为生活所带来的乐趣。使用方式：拇指与中指轻握拆信刀边缘，食指轻压刀刃，刀刃尖端可在信封背面封口一角挑出小缺孔，即可顺势划开封口。
    ',
    price: 45,
    quantity: 10,
    category_id: 4,
-   brand_id: 1,
+   brand_id: 2,
    is_hidden: false
  )
 
  Product.create!(
-   name: 'Tools to Liveby 随行袋（L）',
+   title: 'Tools to Liveby 随行袋（L）',
    description: '
   《礼拜文房具》新款随行袋，比曾经推出过的所有袋子尺寸更大了些，可舒适地手提也可帅气地肩背，有深蓝色与米白色两款。随行袋内侧另有一个小口袋，可放置小物件，使用起来更加方便，逛街购物或随时来个小旅行，都非常实用，是生活中的必备单品。
    ',
    price: 450,
    quantity: 15,
    category_id: 9,
-   brand_id: 1,
+   brand_id: 2,
    is_hidden: false
  )
 
  Product.create!(
-   name: 'Tools to Liveby 隨行袋（S）',
+   title: 'Tools to Liveby 隨行袋（S）',
    description: '
    《礼拜文房具》新推出的环保袋，此款袋型较小，可手提也可以斜肩背，袋口部分有个黑色小扣子的设计，能够保护袋内物品不易掉出。同样是双面图桉设计，一面是经典图示，另一面印着我们很喜欢也一直是我们生活理念的 Quote  “Be refined, polite and wellspoken.” 。
 
@@ -317,24 +315,24 @@ end
    price: 450,
    quantity: 8,
    category_id: 9,
-   brand_id: 1,
+   brand_id: 2,
    is_hidden: false
  )
 
  Product.create!(
-   name: 'Tools to Liveby 手提肩背两用环保袋',
+   title: 'Tools to Liveby 手提肩背两用环保袋',
    description: '
    这一款我们自己称它为「文青袋」，样式比较中性，尺寸也大上许多！除了可以手提之外，侧边车缝了一条较长的背带，内容物太重时可肩背。双面的图桉设计，一面是礼拜文房具的经典图标，另一面是插画与文字设计。较薄的布料材质，方便平时收纳在包包里，外出或购物时取出使用。
    ',
    price: 300,
    quantity: 20,
    category_id: 9,
-   brand_id: 1,
+   brand_id: 3,
    is_hidden: false
  )
 
  Product.create!(
-   name: 'Kaweco Liliput 迷你手账型原子笔（平面）',
+   title: 'Kaweco Liliput 迷你手账型原子笔（平面）',
    description: '
    2014年的新商品，德国 KAWECO Liliput 迷你手账型原子笔，以耐久耐用的黄铜材质所製作，总长度仅有9.6cm，黄铜笔身握在手里温润的触感让人爱不释手！
 
@@ -344,12 +342,12 @@ end
    price: 2500,
    quantity: 20,
    category_id: 1,
-   brand_id: 2,
+   brand_id: 3,
    is_hidden: false
  )
 
  Product.create!(
-   name: 'Kaweco 经典钢笔（EF尖）',
+   title: 'Kaweco 经典钢笔（EF尖）',
    description: '
    Kaweco 经典笔款，有着八角形的笔管及可以放进口袋中的小巧体积，20世纪初推出后旋即主导了德国钢笔界的主流。
 
@@ -358,24 +356,24 @@ end
    price: 910,
    quantity: 1,
    category_id: 1,
-   brand_id: 2,
+   brand_id: 3,
    is_hidden: false
  )
 
  Product.create!(
-   name: 'Kaweco Liliput 迷你手账型钢笔（F尖）',
+   title: 'Kaweco Liliput 迷你手账型钢笔（F尖）',
    description: '
    德国 Kaweco 2014年的新商品：Liliput 迷你首张型钢笔，可能会是你所拥有过最小的一支钢笔，以耐久耐用的黄铜材质所制造，总长度仅有 9.6 公分，使用时再将笔盖旋转接上笔尾螺纹处，让书写更方便顺手。
    ',
    price: 3200,
    quantity: 2,
    category_id: 1,
-   brand_id: 2,
+   brand_id: 4,
    is_hidden: false
  )
 
  Product.create!(
-   name: 'Rhodia 筆記本 N°16 （点线）',
+   title: 'Rhodia 笔记本 N°16 （点线）',
    description: '
    来自法国，笔记本纸感滑顺，使用便利的贴心设计，纸质为无酸纸，适用各种笔款墨水书写。
 
@@ -384,12 +382,12 @@ end
    price: 200,
    quantity: 7,
    category_id: 3,
-   brand_id: 3,
+   brand_id: 4,
    is_hidden: false
  )
 
  Product.create!(
-   name: 'Rhodia 笔记本 N°13（方格）',
+   title: 'Rhodia 笔记本 N°13（方格）',
    description: '
    来自法国，笔记本纸感滑顺，使用便利的贴心设计，纸质为无酸纸，适用各种笔款墨水书写。
 
@@ -398,24 +396,24 @@ end
    price: 150,
    quantity: 4,
    category_id: 3,
-   brand_id: 3,
+   brand_id: 4,
    is_hidden: false
  )
 
  Product.create!(
-   name: 'Merchant & Mills Fine Art Print',
+   title: 'Merchant & Mills Fine Art Print',
    description: '
    精美的经典黑白海报选用高级艺术纸，符合摄影师以及艺术家对于纸质的高要求。海报上为 Merchant & Mills 产品的图案，不但美观又精致，值得收藏。
    ',
    price: 2690,
    quantity: 5,
    category_id: 7,
-   brand_id: 7,
+   brand_id: 5,
    is_hidden: false
  )
 
  Product.create!(
-   name: 'Midori 经典黄铜系列尺',
+   title: 'Midori 经典黄铜系列尺',
    description: '
    Midori 黄铜系列——刻画岁月痕迹的文具，这一系列有铅笔盒、尺、原子笔、铅笔还有书签，除了书签以外，全部都是由日本艺人亲手打造。黄铜 (brass) 是红铜与锌的合金，因色黄而得名，黄铜的机械性能和耐磨性能都很好，可用于制造精密仪器、船舶的零件、乐器、枪炮的弹壳等，黄铜表面会因为时间流逝而酸化变色，呈现出独特的光泽，若是你喜欢物品经过长时间的使用而留下岁月的痕迹，那么 Midori 黄铜系列是个很好的选择。
    ',
@@ -427,7 +425,7 @@ end
  )
 
  Product.create!(
-   name: 'Midori MD Light笔记本（文库/空白）',
+   title: 'Midori MD Light笔记本（文库/空白）',
    description: '
    Midori 笔记本让您重新爱上书写。
 
@@ -441,7 +439,7 @@ end
  )
 
  Product.create!(
-   name: 'Hightide 微型收纳铁盒',
+   title: 'Hightide 微型收纳铁盒',
    description: '
    马口铁材质，迷你的尺寸是刚好可以装入名片的大小，共有红、黑、蓝 3 色，可将桌上散落的小物、饰品分门别类地收纳，外型像个小急救箱，可爱的模样让人想一次全入手！
    ',
@@ -453,7 +451,7 @@ end
  )
 
  Product.create!(
-   name: 'Hightide 美耐皿浅盘（M）',
+   title: 'Hightide 美耐皿浅盘（M）',
    description: '
    大理石模样的美耐皿置物盘，质地轻巧，可随手放置文具、钥匙、个人物品，或是用来当作店铺的零钱盘，美化你的桌上风景。
    ',
@@ -465,14 +463,14 @@ end
  )
 
  Product.create!(
-   name: 'Hightide 迷你工具盒',
+   title: 'Hightide 迷你工具盒',
    description: '
    迷你尺寸的工具箱，适合桌上收纳小物，附有把手，全系列共三种颜色可选择。
    ',
    price: 400,
    quantity: 4,
    category_id: 6,
-   brand_id: 6,
+   brand_id: 7,
    is_hidden: false
  )
 
