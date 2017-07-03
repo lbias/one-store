@@ -15,13 +15,12 @@
 //= require turbolinks
 //= require social-share-button
 //= require social-share-button/wechat
-//= require bootstrap/alert
-//= require bootstrap/dropdown
+//= require bootstrap
 //= require masonry/jquery.masonry
 //= require_tree .
 
 $(document).on('scroll', function () {
-  //  Welcome#index - 首页导航列变化
+  // Welcome#index - 首页导航列变化
 	if ($(this).scrollTop() > 125) {
 		$('#navbar').addClass('show_bgcolor')
 	} else {
@@ -41,18 +40,22 @@ $(document).on('scroll', function () {
     });
 })
 
+
 // Products#show - 变更显示图片
 $(document).on('mouseover', '.list-image', function () {
   var src_other = $(this).attr('src') //抓取小图图片路径
   var src_main = src_other.toString().replace("other", "main") //更改图片路径
+
   $('.main-image').attr('src', src_main) //变更大图图片路径
+
   $('.list-image').removeClass('list-image-active') //其它图片移除锁定状态
   $(this).addClass('list-image-active') //当前图片新增锁定状态
 })
 
-// Products#show - 变更购买数量
+
+// 更改购买数量
 $(document).on('turbolinks:load', function() {
-  // 增加购买数量
+  // 更加购买数量
   $("#quantity-up").click(function(e) {
     var num = parseInt($("#quantity").val());
     var numMax = $("#quantity").attr("max");
@@ -71,7 +74,7 @@ $(document).on('turbolinks:load', function() {
     e.preventDefault();
   });
 
-  // 确认购买数量，不能超过库存
+  // 确认购买数量不能超库存
   $("#quantity").blur(function(e) {
     var num = parseInt($(this).val());
     var numMax = $(this).attr("max");
@@ -84,7 +87,7 @@ $(document).on('turbolinks:load', function() {
     e.preventDefault();
   });
 
-  // 确认购买数量，不能超过库存
+  // 确认购买数量不能超库存
   $(".cart-quantity-input").blur(function(e) {
     var num = parseInt($(this).val());
     var numMax = $(this).attr("max");
