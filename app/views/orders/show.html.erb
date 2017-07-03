@@ -17,21 +17,21 @@
           </thead>
           <!-- 订单列表内容 -->
           <tbody>
-          <% @order_items.each do |order_item| %>
+          <% @product_lists.each do |product_list| %>
           <tr>
             <td>
               <!-- 商品图片 -->
                 <% ifproduct_list.product.product_images.present? %>
                   <!-- 显示第一张图片 -->
-                  <%= image_tag(order_item.product.product_images[0].image.other.url)%>
+                  <%= image_tag(product_list.product.product_images[0].image.other.url)%>
                 <% else %>
                   <%= image_tag('http://placehold.it/200x200&text=No Pic') %>
                 <% end %>
               </td>
-            <td class='width-50'><%= link_to(order_item.product.title, product_path(order_item.product)) %></td>
-            <td><%= render_order_product_price(order_item.product) %></td>
+            <td class='width-50'><%= link_to(product_list.product.title, product_path(product_list.product)) %></td>
+            <td><%= render_order_product_price(product_list.product) %></td>
             <td>x <%=product_list.quantity %></td>
-            <td><%= render_order_product_price_count(order_item.product,order_item.quantity) %></td>
+            <td><%= render_order_product_price_count(product_list.product,product_list.quantity) %></td>
           </tr>
           <% end %>
         </tbody>

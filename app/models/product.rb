@@ -10,7 +10,7 @@ class Product < ApplicationRecord
   # 关联
   belongs_to :category
   belongs_to :brand
-  has_one :order_item
+  has_one :product_list
   has_many :product_images, dependent: :destroy
   accepts_nested_attributes_for :product_images
   has_many :wish_lists

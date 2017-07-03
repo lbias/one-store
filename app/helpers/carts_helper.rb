@@ -11,7 +11,7 @@ module CartsHelper
 
   def render_product_quantity(product)
     @product = Product.find(product)
-    @orderSum = OrderItem.where("product_id" => product).sum(:quantity)
+    @orderSum = ProductList.where("product_id" => product).sum(:quantity)
     @product.quantity - @orderSum
   end
 end
