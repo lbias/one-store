@@ -50,4 +50,5 @@ group :production do
   gem "capistrano"
   gem "capistrano-rvm"
   gem "capistrano-rails"
+  gem 'capistrano-rails-collection'
 end
