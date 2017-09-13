@@ -10,28 +10,13 @@
 if User.find_by(email: 'admin@test.com').nil?
   u = User.new
   u.name = '测试管理员'
-  u.email = 'admin@test.com'
+  u.email = 'admin@rails.com'
   u.nickname = 'Sam Admin'
-  u.password = '11111111'
-  u.password_confirmation = '11111111'
+  u.password = '111111'
+  u.password_confirmation = '111111'
   u.is_admin = true
   u.save
   puts '创建管理员*1'
-else
-  puts '已创建过此账号，不重复新增。'
-end
-
-# 新增 user 账号  User
-if User.find_by(email: 'user@test.com').nil?
-  u = User.new
-  u.name = '测试用户'
-  u.email = 'user@test.com'
-  u.nickname = 'Sam User'
-  u.password = '11111111'
-  u.password_confirmation = '11111111'
-  u.is_admin = false
-  u.save
-  puts '创建一般用戶*1'
 else
   puts '已创建过此账号，不重复新增。'
 end
